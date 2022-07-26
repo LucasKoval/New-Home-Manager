@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps, token }) {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <Head>
-        <title>NextJS Template</title>
+        <title>New Home Manager</title>
         <meta name="description" content="NextJS Template developed by Lucas Koval" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
