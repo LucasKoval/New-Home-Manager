@@ -1,0 +1,32 @@
+{
+  "name": "new-home-manager",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Lucas Koval",
+  "license": "ISC",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasKoval/New-Home-Manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasKoval/New-Home-Manager/issues"
+  },
+  "homepage": "https://github.com/LucasKoval/New-Home-Manager#readme",
+  "dependencies": {
+    "next": "12.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.0.7",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3",
+    "prettier": "2.7.1"
+  }
+}
