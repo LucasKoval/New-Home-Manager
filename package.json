@@ -1,32 +1,49 @@
 {
-  "name": "new-home-manager",
-  "version": "0.1.0",
-  "private": true,
-  "author": "Lucas Koval",
-  "license": "ISC",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LucasKoval/New-Home-Manager.git"
-  },
-  "bugs": {
-    "url": "https://github.com/LucasKoval/New-Home-Manager/issues"
-  },
-  "homepage": "https://github.com/LucasKoval/New-Home-Manager#readme",
-  "dependencies": {
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3",
-    "prettier": "2.7.1"
-  }
+   "name": "new-home-manager",
+   "version": "0.1.0",
+   "private": true,
+   "author": "Lucas Koval",
+   "license": "ISC",
+   "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/LucasKoval/New-Home-Manager.git"
+   },
+   "bugs": {
+      "url": "https://github.com/LucasKoval/New-Home-Manager/issues"
+   },
+   "homepage": "https://github.com/LucasKoval/New-Home-Manager#readme",
+   "dependencies": {
+      "dayjs": "^1.11.4",
+      "dotenv": "^16.0.1",
+      "lodash": "^4.17.21",
+      "next": "12.2.3",
+      "nextjs-progressbar": "^0.0.14",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-hook-form": "^7.33.1",
+      "react-icons": "^4.4.0",
+      "react-loader-spinner": "^5.1.7-beta.1",
+      "react-toastify": "^9.0.7",
+      "styled-components": "^5.3.5",
+      "styled-theming": "^2.2.0"
+   },
+   "devDependencies": {
+      "@babel/cli": "^7.18.9",
+      "@babel/core": "^7.18.9",
+      "@babel/preset-env": "^7.18.9",
+      "@babel/preset-react": "^7.18.6",
+      "babel-plugin-styled-components": "^2.0.7",
+      "eslint": "8.20.0",
+      "eslint-config-next": "12.2.3",
+      "prettier": "2.7.1"
+   },
+   "resolutions": {
+      "styled-components": "^5"
+   }
 }
