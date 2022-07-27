@@ -211,6 +211,11 @@ export const Subtitle = styled.h2`
   text-transform: uppercase;
   margin-top: 3rem;
   margin-bottom: -2rem;
+
+  &.list {
+    margin-bottom: 0;
+  }
+
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     margin-top: 2rem;
     margin-bottom: 1rem;
