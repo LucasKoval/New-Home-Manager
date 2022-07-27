@@ -107,6 +107,7 @@ const rows = [
 export default function Page2() {
   return (
     <MainSection className="MainSection">
+      <Subtitle>Listado de Materiales</Subtitle>
       <PageContainer className="PageContainer">
         <TableContainer component={Paper}>
           <Table aria-label="collapsible table">

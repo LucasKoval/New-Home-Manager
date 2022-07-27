@@ -2,9 +2,11 @@ import React, { useState, useContext } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { toast } from 'react-toastify'
-import { IoHomeOutline, IoDocumentTextOutline } from 'react-icons/io5'
+import { IoHomeOutline, IoDocumentsOutline } from 'react-icons/io5'
+import { MdOutlineDesignServices } from 'react-icons/md'
+import { BsBricks } from 'react-icons/bs'
 import { GlobalContext } from '@/context/GlobalContext'
-import { HeaderSection, Title, ImageContainer } from './styles'
+import { HeaderSection, Title, ImageContainer } from './Header.styles.jsx'
 
 const Header = () => {
   const router = useRouter()
@@ -17,7 +19,7 @@ const Header = () => {
 
   const goHome = () => {
     router.push('/')
-    toast.success('Welcome Home!')
+    /* toast.success('Welcome Home!') */
   }
 
   const goToPage = (id) => {
@@ -39,15 +41,15 @@ const Header = () => {
             <li>Home</li>
           </a>
           <a onClick={() => goToPage('1')}>
-            <IoDocumentTextOutline />
-            <li>Arquitecta</li>
+            <MdOutlineDesignServices />
+            <li>Proyecto</li>
           </a>
           <a onClick={() => goToPage('2')}>
-            <IoDocumentTextOutline />
+            <BsBricks />
             <li>Materiales</li>
           </a>
           <a onClick={() => goToPage('3')}>
-            <IoDocumentTextOutline />
+            <IoDocumentsOutline />
             <li>Documentos</li>
           </a>
         </ul>

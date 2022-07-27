@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Planta y Vista",
+    "description": "Plano completo del proyecto y vista del frente.",
+    "link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+  },
+  {
+    "id": 2,
+    "name": "Planta de Proyecto",
+    "description": "Plano completo del proyecto.",
+    "link": "https://drive.google.com/file/d/1CMuxoryvYyUZlbGMzq8GZKXxvsH9zLpi/view?usp=sharing"
+  },
+  {
+    "id": 3,
+    "name": "Planta de Techos",
+    "description": "Plano de techos y superficie construida.",
+    "link": "https://drive.google.com/file/d/1oGLMdGNF8twgXmK4h4H2SQSLPFEP_zq_/view?usp=sharing"
+  },
+  {
+    "id": 4,
+    "name": "Plano - Medidas",
+    "description": "Plano de medidas del proyecto.",
+    "link": "https://drive.google.com/file/d/1vT-fJLabEEZQltfpe4QWWT1umpl1m-jU/view?usp=sharing"
+  },
+  {
+    "id": 5,
+    "name": "Plano - Fundaciones",
+    "description": "Plano de replanteo y fundaciones del proyecto.",
+    "link": "https://drive.google.com/file/d/1a70buGc4KrFpAidYsOv7ekyWXKYnbih8/view?usp=sharing"
+  },
+  {
+    "id": 6,
+    "name": "Plano - Encadenado",
+    "description": "Plano de columnas y viga de encadenado.",
+    "link": "https://drive.google.com/file/d/1MnY0M0p7L8BZOSY-G31q97S51kvVoSv5/view?usp=sharing"
+  },
+  {
+    "id": 7,
+    "name": "Listado - Materiales",
+    "description": "Listado de materiales aproximado por etapas.",
+    "link": "https://drive.google.com/file/d/1W02tq21Wlxbj32fA639DhkvtQSCMhn_3/view?usp=sharing"
+  },
+  {
+    "id": 8,
+    "name": "Listado - Tareas",
+    "description": "Listado de tareas a realizar por etapas.",
+    "link": "https://drive.google.com/file/d/1kyYRkRPkhyDY0pe9LG6nwBeXiAhhsodc/view?usp=sharing"
+  }
+]
