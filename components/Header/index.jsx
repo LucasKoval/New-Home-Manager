@@ -40,15 +40,15 @@ const Header = () => {
           </a>
           <a onClick={() => goToPage('1')}>
             <IoDocumentTextOutline />
-            <li>Page 1</li>
+            <li>Arquitecta</li>
           </a>
           <a onClick={() => goToPage('2')}>
             <IoDocumentTextOutline />
-            <li>Page 2</li>
+            <li>Materiales</li>
           </a>
           <a onClick={() => goToPage('3')}>
             <IoDocumentTextOutline />
-            <li>Page 3</li>
+            <li>Documentos</li>
           </a>
         </ul>
       </ImageContainer>

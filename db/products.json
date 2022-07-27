@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "arena",
+    "unid": "bolsa",
+    "comprado": 10,
+    "retirado": 3,
+    "restante": 7,
+    "tienda": "valmar",
+    "precio": 1000,
+    "fecha_compra": "10-10-22",
+    "ultima_fecha_retiro": "20-10-22",
+    "compra_cerrada": false,
+    "factura_asociada": "archivo"
+  },
+  {
+    "id": 2,
+    "name": "arena",
+    "unid": "bolsa",
+    "comprado": 10,
+    "retirado": 3,
+    "restante": 7,
+    "tienda": "valmar",
+    "precio": 1000,
+    "fecha_compra": "10-10-22",
+    "ultima_fecha_retiro": "20-10-22",
+    "compra_cerrada": false,
+    "factura_asociada": "archivo"
+  },
+  {
+    "id": 3,
+    "name": "arena",
+    "unid": "bolsa",
+    "comprado": 10,
+    "retirado": 3,
+    "restante": 7,
+    "tienda": "valmar",
+    "precio": 1000,
+    "fecha_compra": "10-10-22",
+    "ultima_fecha_retiro": "20-10-22",
+    "compra_cerrada": false,
+    "factura_asociada": "archivo"
+  }
+]

@@ -192,6 +192,7 @@ export const PageContainer = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  padding: 2rem 0;
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     width: 90%;
     flex-flow: column;
