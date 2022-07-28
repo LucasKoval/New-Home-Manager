@@ -193,10 +193,16 @@ export const PageContainer = styled.div`
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem 0;
+
+  &.homepage {
+    flex-direction: column;
+  }
+
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     width: 90%;
     flex-flow: column;
     justify-content: center;
+    padding: 0 0 2rem 0;
   }
 `
 

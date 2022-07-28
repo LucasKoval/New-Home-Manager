@@ -36,7 +36,7 @@ export default function Page1() {
                 <a target="_blank" rel="noreferrer" title="Abrir documento" className="me-4">
                   <CardActionArea>
                     <CardMedia component="img" height="140" image="/img/arqui.png" alt="logo" />
-                    <CardContent>
+                    <CardContent style={{ backgroundColor: '#E8ECEE' }}>
                       <Typography gutterBottom variant="h5" component="div">
                         {project.name}
                       </Typography>

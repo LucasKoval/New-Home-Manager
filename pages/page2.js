@@ -22,12 +22,18 @@ function Row(props) {
   const [open, setOpen] = React.useState(false)
 
   const rowStyle = {
+    backgroundColor: '#E8ECEE',
+  }
+  const rowStyleClosed = {
     backgroundColor: 'lightpink',
   }
 
   return (
     <>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }} style={row.closed ? rowStyle : null}>
+      <TableRow
+        sx={{ '& > *': { borderBottom: 'unset' } }}
+        style={row.closed ? rowStyleClosed : rowStyle}
+      >
         <TableCell>
           <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
@@ -46,19 +52,35 @@ function Row(props) {
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="h6" gutterBottom component="div">
-                Historial
+                HISTORIAL
               </Typography>
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Fecha</TableCell>
-                    <TableCell>Operación</TableCell>
-                    <TableCell>Tienda</TableCell>
-                    <TableCell align="right">Precio</TableCell>
-                    <TableCell align="right">Cantidad comprada</TableCell>
-                    <TableCell align="right">Cantidad retirada</TableCell>
-                    <TableCell align="right">Cantidad restante</TableCell>
-                    <TableCell align="right">Comprobante</TableCell>
+                    <TableCell>
+                      <strong>Fecha</strong>
+                    </TableCell>
+                    <TableCell>
+                      <strong>Operación</strong>
+                    </TableCell>
+                    <TableCell>
+                      <strong>Tienda</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>Precio</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>Cantidad comprada</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>Cantidad retirada</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>Cantidad restante</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>Comprobante</strong>
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -105,13 +127,23 @@ export default function Page2() {
         <TableContainer component={Paper}>
           <Table aria-label="collapsible table">
             <TableHead>
-              <TableRow>
+              <TableRow style={{ backgroundColor: '#E8ECEE' }}>
                 <TableCell />
-                <TableCell>Material</TableCell>
-                <TableCell align="right">Unidad</TableCell>
-                <TableCell align="right">Comprados</TableCell>
-                <TableCell align="right">Retirados</TableCell>
-                <TableCell align="right">Restantes</TableCell>
+                <TableCell>
+                  <strong>MATERIAL</strong>
+                </TableCell>
+                <TableCell align="right">
+                  <strong>UNIDAD</strong>
+                </TableCell>
+                <TableCell align="right">
+                  <strong>COMPRADOS</strong>
+                </TableCell>
+                <TableCell align="right">
+                  <strong>RETIRADOS</strong>
+                </TableCell>
+                <TableCell align="right">
+                  <strong>RESTANTES</strong>
+                </TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
