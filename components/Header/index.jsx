@@ -55,7 +55,7 @@ const Header = () => {
         </ul>
       </ImageContainer>
 
-      <Title onClick={() => goHome()}>New Home Manager</Title>
+      <Title onClick={() => goHome()}>Proyecto - Casa Nueva</Title>
 
       <ImageContainer className="themeToogle" onClick={() => themeToggler()}>
         <Image

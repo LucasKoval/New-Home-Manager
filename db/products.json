@@ -1,44 +1,98 @@
 [
   {
     "id": 1,
-    "name": "arena",
-    "unid": "bolsa",
-    "comprado": 10,
-    "retirado": 3,
-    "restante": 7,
-    "tienda": "valmar",
-    "precio": 1000,
-    "fecha_compra": "10-10-22",
-    "ultima_fecha_retiro": "20-10-22",
-    "compra_cerrada": false,
-    "factura_asociada": "archivo"
+    "name": "Cemento",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 3,
+    "total_remaining": 7,
+    "store": "Valmar",
+    "total_price": 1000,
+    "purchase_date": "10-10-22",
+    "closed": false,
+    "history": [
+      {
+        "date": "10-10-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      },
+      {
+        "date": "20-10-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 3,
+        "qty_remaining": 7,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
   },
   {
     "id": 2,
-    "name": "arena",
-    "unid": "bolsa",
-    "comprado": 10,
-    "retirado": 3,
-    "restante": 7,
-    "tienda": "valmar",
-    "precio": 1000,
-    "fecha_compra": "10-10-22",
-    "ultima_fecha_retiro": "20-10-22",
-    "compra_cerrada": false,
-    "factura_asociada": "archivo"
+    "name": "Arena",
+    "unit": "m3",
+    "total_purchased": 10,
+    "total_withdrawn": 3,
+    "total_remaining": 7,
+    "store": "Valmar",
+    "total_price": 1000,
+    "purchase_date": "10-10-22",
+    "closed": false,
+    "history": [
+      {
+        "date": "10-10-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      },
+      {
+        "date": "20-10-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 3,
+        "qty_remaining": 7,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
   },
   {
     "id": 3,
-    "name": "arena",
-    "unid": "bolsa",
-    "comprado": 10,
-    "retirado": 3,
-    "restante": 7,
-    "tienda": "valmar",
-    "precio": 1000,
-    "fecha_compra": "10-10-22",
-    "ultima_fecha_retiro": "20-10-22",
-    "compra_cerrada": false,
-    "factura_asociada": "archivo"
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 3,
+    "total_remaining": 7,
+    "store": "Valmar",
+    "total_price": 1000,
+    "purchase_date": "10-10-22",
+    "closed": false,
+    "history": [
+      {
+        "date": "10-10-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      },
+      {
+        "date": "20-10-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 3,
+        "qty_remaining": 7,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
   }
 ]

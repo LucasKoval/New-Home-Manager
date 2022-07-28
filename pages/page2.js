@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Box from '@mui/material/Box'
 import Collapse from '@mui/material/Collapse'
 import IconButton from '@mui/material/IconButton'
@@ -12,38 +13,21 @@ import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
+import { GrDocumentPdf } from 'react-icons/gr'
+import products from '../db/products.json'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
-
-function createData(name, calories, fat, carbs, protein, price) {
-  return {
-    name,
-    calories,
-    fat,
-    carbs,
-    protein,
-    price,
-    history: [
-      {
-        date: '2020-01-05',
-        customerId: '11091700',
-        amount: 3,
-      },
-      {
-        date: '2020-01-02',
-        customerId: 'Anonymous',
-        amount: 1,
-      },
-    ],
-  }
-}
 
 function Row(props) {
   const { row } = props
   const [open, setOpen] = React.useState(false)
 
+  const rowStyle = {
+    backgroundColor: 'lightpink',
+  }
+
   return (
     <>
-      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }}>
+      <TableRow sx={{ '& > *': { borderBottom: 'unset' } }} style={row.closed ? rowStyle : null}>
         <TableCell>
           <IconButton aria-label="expand row" size="small" onClick={() => setOpen(!open)}>
             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
@@ -52,25 +36,29 @@ function Row(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.calories}</TableCell>
-        <TableCell align="right">{row.fat}</TableCell>
-        <TableCell align="right">{row.carbs}</TableCell>
-        <TableCell align="right">{row.protein}</TableCell>
+        <TableCell align="right">{row.unit}</TableCell>
+        <TableCell align="right">{row.total_purchased}</TableCell>
+        <TableCell align="right">{row.total_withdrawn}</TableCell>
+        <TableCell align="right">{row.total_remaining}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
           <Collapse in={open} timeout="auto" unmountOnExit>
             <Box sx={{ margin: 1 }}>
               <Typography variant="h6" gutterBottom component="div">
-                Detalles
+                Historial
               </Typography>
               <Table size="small" aria-label="purchases">
                 <TableHead>
                   <TableRow>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Customer</TableCell>
-                    <TableCell align="right">Amount</TableCell>
-                    <TableCell align="right">Total price ($)</TableCell>
+                    <TableCell>Fecha</TableCell>
+                    <TableCell>Operación</TableCell>
+                    <TableCell>Tienda</TableCell>
+                    <TableCell align="right">Precio</TableCell>
+                    <TableCell align="right">Cantidad comprada</TableCell>
+                    <TableCell align="right">Cantidad retirada</TableCell>
+                    <TableCell align="right">Cantidad restante</TableCell>
+                    <TableCell align="right">Comprobante</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -79,10 +67,23 @@ function Row(props) {
                       <TableCell component="th" scope="row">
                         {historyRow.date}
                       </TableCell>
-                      <TableCell>{historyRow.customerId}</TableCell>
-                      <TableCell align="right">{historyRow.amount}</TableCell>
+                      <TableCell>{historyRow.operation}</TableCell>
+                      <TableCell>{row.store}</TableCell>
+                      <TableCell align="right">{historyRow.price}</TableCell>
+                      <TableCell align="right">{historyRow.qty_purchased}</TableCell>
+                      <TableCell align="right">{historyRow.qty_withdrawn}</TableCell>
+                      <TableCell align="right">{historyRow.qty_remaining}</TableCell>
                       <TableCell align="right">
-                        {Math.round(historyRow.amount * row.price * 100) / 100}
+                        <Link href={historyRow.document_link}>
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            title="Abrir documento"
+                            className="me-4"
+                          >
+                            <GrDocumentPdf />
+                          </a>
+                        </Link>
                       </TableCell>
                     </TableRow>
                   ))}
@@ -95,14 +96,6 @@ function Row(props) {
     </>
   )
 }
-
-const rows = [
-  createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 3.99),
-  createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 4.99),
-  createData('Eclair', 262, 16.0, 24, 6.0, 3.79),
-  createData('Cupcake', 305, 3.7, 67, 4.3, 2.5),
-  createData('Gingerbread', 356, 16.0, 49, 3.9, 1.5),
-]
 
 export default function Page2() {
   return (
@@ -122,8 +115,8 @@ export default function Page2() {
               </TableRow>
             </TableHead>
             <TableBody>
-              {rows.map((row) => (
-                <Row key={row.name} row={row} />
+              {products.map((product) => (
+                <Row key={product.id} row={product} />
               ))}
             </TableBody>
           </Table>
