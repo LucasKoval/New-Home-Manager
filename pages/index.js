@@ -95,14 +95,14 @@ export default function Home() {
 
   return (
     <MainSection className="MainSection">
-      <PageContainer className="PageContainer">
+      <PageContainer className="PageContainer homepage">
         <CardContainer>
           <Card sx={{ maxWidth: 345 }}>
             <Link href="/page1">
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/img/project.png" alt="logo" />
-                  <CardContent>
+                  <CardContent style={{ backgroundColor: '#E8ECEE' }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Proyecto
                     </Typography>
@@ -120,7 +120,7 @@ export default function Home() {
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/img/materials.png" alt="logo" />
-                  <CardContent>
+                  <CardContent style={{ backgroundColor: '#E8ECEE' }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Materiales
                     </Typography>
@@ -138,7 +138,7 @@ export default function Home() {
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>
                   <CardMedia component="img" height="140" image="/img/docs.png" alt="logo" />
-                  <CardContent>
+                  <CardContent style={{ backgroundColor: '#E8ECEE' }}>
                     <Typography gutterBottom variant="h5" component="div">
                       Documentos
                     </Typography>

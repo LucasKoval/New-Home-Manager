@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Planta y Vista",
-    "description": "Plano completo del proyecto y vista del frente.",
+    "description": "Plano del proyecto y vista del frente.",
     "link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
   },
   {
@@ -26,7 +26,7 @@
   {
     "id": 5,
     "name": "Plano - Fundaciones",
-    "description": "Plano de replanteo y fundaciones del proyecto.",
+    "description": "Plano de replanteo y fundaciones.",
     "link": "https://drive.google.com/file/d/1a70buGc4KrFpAidYsOv7ekyWXKYnbih8/view?usp=sharing"
   },
   {
@@ -38,13 +38,13 @@
   {
     "id": 7,
     "name": "Listado - Materiales",
-    "description": "Listado de materiales aproximado por etapas.",
+    "description": "Listado de materiales por etapas.",
     "link": "https://drive.google.com/file/d/1W02tq21Wlxbj32fA639DhkvtQSCMhn_3/view?usp=sharing"
   },
   {
     "id": 8,
     "name": "Listado - Tareas",
-    "description": "Listado de tareas a realizar por etapas.",
+    "description": "Listado de tareas por etapas.",
     "link": "https://drive.google.com/file/d/1kyYRkRPkhyDY0pe9LG6nwBeXiAhhsodc/view?usp=sharing"
   }
 ]
