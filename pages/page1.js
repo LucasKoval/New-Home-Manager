@@ -8,7 +8,7 @@ import { Button, CardActionArea } from '@mui/material'
 // import { Watch } from 'react-loader-spinner'
 import CardContainer from '../components/Layout/CardContainer'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
-import Projects from '../db/project.json'
+import projects from '../db/project.json'
 
 export default function Page1() {
   /* const [loading, setLoading] = useState(true)
@@ -30,7 +30,7 @@ export default function Page1() {
       <Subtitle>Proyecto - Arquitecta</Subtitle>
       <PageContainer className="PageContainer">
         <CardContainer>
-          {Projects.map((project) => (
+          {projects.map((project) => (
             <Card sx={{ maxWidth: 345 }} key={project.id}>
               <Link href={project.link}>
                 <a target="_blank" rel="noreferrer" title="Abrir documento" className="me-4">
