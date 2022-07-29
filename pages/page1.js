@@ -1,30 +1,15 @@
-import React /* , { useState } */ from 'react'
+import React from 'react'
 import Link from 'next/link'
 import Card from '@mui/material/Card'
 import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import { Button, CardActionArea } from '@mui/material'
-// import { Watch } from 'react-loader-spinner'
-import CardContainer from '../components/Layout/CardContainer'
+import { CardActionArea } from '@mui/material'
+import CardContainer from '@/components/Layout/CardContainer'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
-import projects from '../db/project.json'
+import projects from '@/db/project.json'
 
 export default function Page1() {
-  /* const [loading, setLoading] = useState(true)
-
-  setTimeout(() => {
-    setLoading(false)
-  }, 1000)
-
-  if (loading) {
-    return (
-      <MainSection className="MainSection">
-        <Watch type="Watch" color="#58a6ff" height={100} width={100} />
-      </MainSection>
-    )
-  } */
-
   return (
     <MainSection className="MainSection">
       <Subtitle>Proyecto - Arquitecta</Subtitle>

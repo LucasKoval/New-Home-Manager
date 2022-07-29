@@ -14,11 +14,10 @@ import Paper from '@mui/material/Paper'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp'
 import { GrDocumentPdf } from 'react-icons/gr'
-import products from '../db/products.json'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
+import products from '@/db/products.json'
 
-function Row(props) {
-  const { row } = props
+function Row({ row }) {
   const [open, setOpen] = React.useState(false)
 
   const rowStyle = {
