@@ -1,96 +1,317 @@
 [
   {
     "id": 1,
-    "name": "Cemento",
-    "unit": "Bolsa",
-    "total_purchased": 10,
-    "total_withdrawn": 3,
-    "total_remaining": 7,
-    "store": "Valmar",
-    "total_price": 1000,
-    "purchase_date": "10-10-22",
+    "name": "Cemento (Bolsa 50Kg)",
+    "unit": "Bolsa 50Kg",
+    "total_purchased": 250,
+    "total_withdrawn": 0,
+    "total_remaining": 250,
+    "store": "VAL-MAR",
+    "total_price": 336552,
     "closed": false,
     "history": [
       {
-        "date": "10-10-22",
+        "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 1346.21,
+        "qty_purchased": 250,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
-      },
-      {
-        "date": "20-10-22",
-        "operation": "Retiro",
-        "price": 0,
-        "qty_purchased": 0,
-        "qty_withdrawn": 3,
-        "qty_remaining": 7,
+        "qty_remaining": 250,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
     "id": 2,
-    "name": "Arena",
-    "unit": "m3",
-    "total_purchased": 10,
-    "total_withdrawn": 3,
-    "total_remaining": 7,
-    "store": "Valmar",
-    "total_price": 1000,
-    "purchase_date": "10-10-22",
+    "name": "Cal (Bolsa 30Kg)",
+    "unit": "Bolsa 30Kg",
+    "total_purchased": 292,
+    "total_withdrawn": 0,
+    "total_remaining": 292,
+    "store": "VAL-MAR",
+    "total_price": 232367,
     "closed": false,
     "history": [
       {
-        "date": "10-10-22",
+        "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 795.78,
+        "qty_purchased": 292,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
-      },
-      {
-        "date": "20-10-22",
-        "operation": "Retiro",
-        "price": 0,
-        "qty_purchased": 0,
-        "qty_withdrawn": 3,
-        "qty_remaining": 7,
+        "qty_remaining": 292,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
     "id": 3,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
-    "total_withdrawn": 3,
-    "total_remaining": 7,
-    "store": "Valmar",
-    "total_price": 1000,
-    "purchase_date": "10-10-22",
+    "name": "Arena (m3)",
+    "unit": "m3",
+    "total_purchased": 50,
+    "total_withdrawn": 0,
+    "total_remaining": 50,
+    "store": "VAL-MAR",
+    "total_price": 247500,
     "closed": false,
     "history": [
       {
-        "date": "10-10-22",
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 4950.01,
+        "qty_purchased": 50,
+        "qty_withdrawn": 0,
+        "qty_remaining": 50,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Hierro 10 (Barra)",
+    "unit": "Barra",
+    "total_purchased": 150,
+    "total_withdrawn": 0,
+    "total_remaining": 150,
+    "store": "VAL-MAR",
+    "total_price": 373615,
+    "closed": false,
+    "history": [
+      {
+        "date": "06-07-22",
+        "operation": "Compra",
+        "price": 2490.77,
+        "qty_purchased": 150,
+        "qty_withdrawn": 0,
+        "qty_remaining": 150,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Hierro 8 (Barra)",
+    "unit": "Barra",
+    "total_purchased": 25,
+    "total_withdrawn": 0,
+    "total_remaining": 25,
+    "store": "VAL-MAR",
+    "total_price": 39751,
+    "closed": false,
+    "history": [
+      {
+        "date": "06-07-22",
+        "operation": "Compra",
+        "price": 1590.07,
+        "qty_purchased": 25,
+        "qty_withdrawn": 0,
+        "qty_remaining": 25,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Hierro 6 (Barra)",
+    "unit": "Barra",
+    "total_purchased": 120,
+    "total_withdrawn": 0,
+    "total_remaining": 120,
+    "store": "VAL-MAR",
+    "total_price": 112860,
+    "closed": false,
+    "history": [
+      {
+        "date": "06-07-22",
+        "operation": "Compra",
+        "price": 940.5,
+        "qty_purchased": 120,
+        "qty_withdrawn": 0,
+        "qty_remaining": 120,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Alambre (Kg)",
+    "unit": "Kg",
+    "total_purchased": 30,
+    "total_withdrawn": 0,
+    "total_remaining": 30,
+    "store": "VAL-MAR",
+    "total_price": 25847,
+    "closed": false,
+    "history": [
+      {
+        "date": "06-07-22",
+        "operation": "Compra",
+        "price": 832.7,
+        "qty_purchased": 17,
+        "qty_withdrawn": 0,
+        "qty_remaining": 17,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      },
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 899.31,
+        "qty_purchased": 13,
+        "qty_withdrawn": 0,
+        "qty_remaining": 30,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Kg",
+    "total_purchased": 13,
+    "total_withdrawn": 0,
+    "total_remaining": 13,
+    "store": "VAL-MAR",
+    "total_price": 11691,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 899.31,
+        "qty_purchased": 13,
+        "qty_withdrawn": 0,
+        "qty_remaining": 13,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
         "operation": "Compra",
         "price": 1000,
         "qty_purchased": 10,
         "qty_withdrawn": 0,
         "qty_remaining": 10,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
-      },
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
       {
-        "date": "20-10-22",
-        "operation": "Retiro",
-        "price": 0,
-        "qty_purchased": 0,
-        "qty_withdrawn": 3,
-        "qty_remaining": 7,
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
+        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 0,
+    "name": "Cal",
+    "unit": "Bolsa",
+    "total_purchased": 10,
+    "total_withdrawn": 0,
+    "total_remaining": 7,
+    "store": "VAL-MAR",
+    "total_price": 1000,
+    "closed": false,
+    "history": [
+      {
+        "date": "11-07-22",
+        "operation": "Compra",
+        "price": 1000,
+        "qty_purchased": 10,
+        "qty_withdrawn": 0,
+        "qty_remaining": 10,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]

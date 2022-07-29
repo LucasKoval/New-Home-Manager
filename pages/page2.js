@@ -42,10 +42,10 @@ function Row(props) {
         <TableCell component="th" scope="row">
           {row.name}
         </TableCell>
-        <TableCell align="right">{row.unit}</TableCell>
         <TableCell align="right">{row.total_purchased}</TableCell>
         <TableCell align="right">{row.total_withdrawn}</TableCell>
         <TableCell align="right">{row.total_remaining}</TableCell>
+        <TableCell align="right">$ {row.total_price}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
@@ -67,7 +67,10 @@ function Row(props) {
                       <strong>Tienda</strong>
                     </TableCell>
                     <TableCell align="right">
-                      <strong>Precio</strong>
+                      <strong>P. Unitario</strong>
+                    </TableCell>
+                    <TableCell align="right">
+                      <strong>P. Total</strong>
                     </TableCell>
                     <TableCell align="right">
                       <strong>Cantidad comprada</strong>
@@ -91,7 +94,10 @@ function Row(props) {
                       </TableCell>
                       <TableCell>{historyRow.operation}</TableCell>
                       <TableCell>{row.store}</TableCell>
-                      <TableCell align="right">{historyRow.price}</TableCell>
+                      <TableCell align="right">${historyRow.price}</TableCell>
+                      <TableCell align="right">
+                        ${(historyRow.price * historyRow.qty_purchased).toFixed(2)}
+                      </TableCell>
                       <TableCell align="right">{historyRow.qty_purchased}</TableCell>
                       <TableCell align="right">{historyRow.qty_withdrawn}</TableCell>
                       <TableCell align="right">{historyRow.qty_remaining}</TableCell>
@@ -122,7 +128,7 @@ function Row(props) {
 export default function Page2() {
   return (
     <MainSection className="MainSection">
-      <Subtitle>Listado de Materiales</Subtitle>
+      <Subtitle className="list">Listado de Materiales</Subtitle>
       <PageContainer className="PageContainer">
         <TableContainer component={Paper}>
           <Table aria-label="collapsible table">
@@ -133,9 +139,6 @@ export default function Page2() {
                   <strong>MATERIAL</strong>
                 </TableCell>
                 <TableCell align="right">
-                  <strong>UNIDAD</strong>
-                </TableCell>
-                <TableCell align="right">
                   <strong>COMPRADOS</strong>
                 </TableCell>
                 <TableCell align="right">
@@ -143,6 +146,9 @@ export default function Page2() {
                 </TableCell>
                 <TableCell align="right">
                   <strong>RESTANTES</strong>
+                </TableCell>
+                <TableCell align="right">
+                  <strong>GASTO TOTAL</strong>
                 </TableCell>
               </TableRow>
             </TableHead>
