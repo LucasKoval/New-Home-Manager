@@ -7,6 +7,7 @@
     "total_withdrawn": 0,
     "total_remaining": 250,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 336552,
     "closed": false,
     "history": [
@@ -17,7 +18,7 @@
         "qty_purchased": 250,
         "qty_withdrawn": 0,
         "qty_remaining": 250,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -29,6 +30,7 @@
     "total_withdrawn": 0,
     "total_remaining": 292,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 232367,
     "closed": false,
     "history": [
@@ -39,7 +41,7 @@
         "qty_purchased": 292,
         "qty_withdrawn": 0,
         "qty_remaining": 292,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -51,6 +53,7 @@
     "total_withdrawn": 0,
     "total_remaining": 50,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 247500,
     "closed": false,
     "history": [
@@ -61,7 +64,7 @@
         "qty_purchased": 50,
         "qty_withdrawn": 0,
         "qty_remaining": 50,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -73,6 +76,7 @@
     "total_withdrawn": 0,
     "total_remaining": 150,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 373615,
     "closed": false,
     "history": [
@@ -83,7 +87,7 @@
         "qty_purchased": 150,
         "qty_withdrawn": 0,
         "qty_remaining": 150,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -95,6 +99,7 @@
     "total_withdrawn": 0,
     "total_remaining": 25,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 39751,
     "closed": false,
     "history": [
@@ -105,7 +110,7 @@
         "qty_purchased": 25,
         "qty_withdrawn": 0,
         "qty_remaining": 25,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -117,6 +122,7 @@
     "total_withdrawn": 0,
     "total_remaining": 120,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 112860,
     "closed": false,
     "history": [
@@ -127,7 +133,7 @@
         "qty_purchased": 120,
         "qty_withdrawn": 0,
         "qty_remaining": 120,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -139,6 +145,7 @@
     "total_withdrawn": 0,
     "total_remaining": 30,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 25847,
     "closed": false,
     "history": [
@@ -149,7 +156,7 @@
         "qty_purchased": 17,
         "qty_withdrawn": 0,
         "qty_remaining": 17,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       },
       {
         "date": "11-07-22",
@@ -158,7 +165,7 @@
         "qty_purchased": 13,
         "qty_withdrawn": 0,
         "qty_remaining": 30,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -170,6 +177,7 @@
     "total_withdrawn": 0,
     "total_remaining": 4000,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 610360,
     "closed": false,
     "history": [
@@ -180,7 +188,7 @@
         "qty_purchased": 4000,
         "qty_withdrawn": 0,
         "qty_remaining": 4000,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -192,6 +200,7 @@
     "total_withdrawn": 0,
     "total_remaining": 1200,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 125952,
     "closed": false,
     "history": [
@@ -202,7 +211,7 @@
         "qty_purchased": 1200,
         "qty_withdrawn": 0,
         "qty_remaining": 1200,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -214,6 +223,7 @@
     "total_withdrawn": 0,
     "total_remaining": 2000,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 74460,
     "closed": false,
     "history": [
@@ -224,7 +234,7 @@
         "qty_purchased": 2000,
         "qty_withdrawn": 0,
         "qty_remaining": 2000,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -236,6 +246,7 @@
     "total_withdrawn": 0,
     "total_remaining": 22,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 9686,
     "closed": false,
     "history": [
@@ -246,7 +257,7 @@
         "qty_purchased": 22,
         "qty_withdrawn": 0,
         "qty_remaining": 22,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -258,6 +269,7 @@
     "total_withdrawn": 0,
     "total_remaining": 5,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 26030,
     "closed": false,
     "history": [
@@ -268,7 +280,7 @@
         "qty_purchased": 5,
         "qty_withdrawn": 0,
         "qty_remaining": 5,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   },
@@ -280,6 +292,7 @@
     "total_withdrawn": 0,
     "total_remaining": 1,
     "store": "VAL-MAR",
+    "stage": "cerramientos",
     "total_price": 8438,
     "closed": false,
     "history": [
@@ -290,7 +303,168 @@
         "qty_purchased": 1,
         "qty_withdrawn": 0,
         "qty_remaining": 1,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Chapa acanalada (m)",
+    "unit": "m",
+    "total_purchased": 140,
+    "total_withdrawn": 0,
+    "total_remaining": 140,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 140,
+        "qty_withdrawn": 0,
+        "qty_remaining": 140,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "PCG del 100 (m)",
+    "unit": "m",
+    "total_purchased": 131.5,
+    "total_withdrawn": 0,
+    "total_remaining": 131.5,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 131.5,
+        "qty_withdrawn": 0,
+        "qty_remaining": 131.5,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Tornillos ch aut (Bolsa 100u)",
+    "unit": "Bolsa 100u",
+    "total_purchased": 5,
+    "total_withdrawn": 0,
+    "total_remaining": 5,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 5,
+        "qty_withdrawn": 0,
+        "qty_remaining": 5,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Lana de vidrio (20m)",
+    "unit": "20m",
+    "total_purchased": 8,
+    "total_withdrawn": 0,
+    "total_remaining": 8,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 8,
+        "qty_withdrawn": 0,
+        "qty_remaining": 8,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Wichi (30m)",
+    "unit": "30m",
+    "total_purchased": 6,
+    "total_withdrawn": 0,
+    "total_remaining": 6,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 6,
+        "qty_withdrawn": 0,
+        "qty_remaining": 6,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Malla (m)",
+    "unit": "m",
+    "total_purchased": 140,
+    "total_withdrawn": 0,
+    "total_remaining": 140,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 140,
+        "qty_withdrawn": 0,
+        "qty_remaining": 140,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Precintos (Bolsa)",
+    "unit": "Bolsa",
+    "total_purchased": 2,
+    "total_withdrawn": 0,
+    "total_remaining": 2,
+    "store": "Bucci",
+    "stage": "techo",
+    "total_price": 0,
+    "closed": false,
+    "history": [
+      {
+        "date": "07-06-22",
+        "operation": "Compra",
+        "price": 0,
+        "qty_purchased": 2,
+        "qty_withdrawn": 0,
+        "qty_remaining": 2,
+        "document_link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
       }
     ]
   }
