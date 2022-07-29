@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "name": "Factura A",
+    "type": "factura",
+    "store": "Bucci",
+    "date": "07-06-22",
+    "description": "Compra de materiales para el techo.",
+    "stage": "techo",
+    "total amount": 617670.01,
+    "link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
+  }
+]

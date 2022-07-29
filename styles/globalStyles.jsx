@@ -9,7 +9,9 @@ export const lightTheme = {
     header: '#eaeaea',
     sidebar: '#eaeaea',
     footer: '#eaeaea',
+    button: '#0F2027',
     toast: '#203A43',
+    hover: '#2C5364',
   },
   fontColor: {
     main: '#203A43',
@@ -44,7 +46,9 @@ export const darkTheme = {
     header: '#0F2027',
     sidebar: '#0F2027',
     footer: '#0F2027',
+    button: '#f2f2f2',
     toast: '#E8ECEE',
+    hover: '#8e9eab',
   },
   fontColor: {
     main: '#E8ECEE',
@@ -198,11 +202,30 @@ export const PageContainer = styled.div`
     flex-direction: column;
   }
 
+  div.materialsTable {
+    margin-top: -1rem;
+  }
+
+  div.accordion-container {
+    min-width: 45rem;
+    div.MuiPaper-root {
+      background-color: #e8ecee;
+    }
+  }
+
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
-    width: 90%;
+    /* width: 90%; */
     flex-flow: column;
     justify-content: center;
     padding: 0 0 2rem 0;
+
+    div.materialsTable {
+      margin-top: 1.5rem;
+    }
+
+    div.accordion-container {
+      min-width: 100%;
+    }
   }
 `
 
@@ -218,6 +241,10 @@ export const Subtitle = styled.h2`
   margin-top: 3rem;
   margin-bottom: -2rem;
 
+  span {
+    color: ${({ theme }) => theme.fontColor.author};
+  }
+
   &.list {
     margin-bottom: 0;
   }
@@ -225,6 +252,8 @@ export const Subtitle = styled.h2`
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
   }
 `
 
