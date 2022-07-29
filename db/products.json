@@ -163,155 +163,133 @@
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Kg",
-    "total_purchased": 13,
+    "id": 8,
+    "name": "Ladrillo Hueco 18 (Unidad)",
+    "unit": "Ladrillo",
+    "total_purchased": 4000,
     "total_withdrawn": 0,
-    "total_remaining": 13,
+    "total_remaining": 4000,
     "store": "VAL-MAR",
-    "total_price": 11691,
+    "total_price": 610360,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 899.31,
-        "qty_purchased": 13,
+        "price": 152.59,
+        "qty_purchased": 4000,
         "qty_withdrawn": 0,
-        "qty_remaining": 13,
+        "qty_remaining": 4000,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
+    "id": 9,
+    "name": "Ladrillo Hueco 12 (Unidad)",
+    "unit": "Ladrillo",
+    "total_purchased": 1200,
     "total_withdrawn": 0,
-    "total_remaining": 7,
+    "total_remaining": 1200,
     "store": "VAL-MAR",
-    "total_price": 1000,
+    "total_price": 125952,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 104.96,
+        "qty_purchased": 1200,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
+        "qty_remaining": 1200,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
+    "id": 10,
+    "name": "Ladrillo Comun (Unidad)",
+    "unit": "Ladrillo",
+    "total_purchased": 2000,
     "total_withdrawn": 0,
-    "total_remaining": 7,
+    "total_remaining": 2000,
     "store": "VAL-MAR",
-    "total_price": 1000,
+    "total_price": 74460,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 37.23,
+        "qty_purchased": 2000,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
+        "qty_remaining": 2000,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
+    "id": 11,
+    "name": "Ladrillo Tergopol (Unidad)",
+    "unit": "Ladrillo",
+    "total_purchased": 22,
     "total_withdrawn": 0,
-    "total_remaining": 7,
+    "total_remaining": 22,
     "store": "VAL-MAR",
-    "total_price": 1000,
+    "total_price": 9686,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 440.29,
+        "qty_purchased": 22,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
+        "qty_remaining": 22,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
+    "id": 12,
+    "name": "Vigueta 4.40 (Unidad)",
+    "unit": "Vigueta",
+    "total_purchased": 5,
     "total_withdrawn": 0,
-    "total_remaining": 7,
+    "total_remaining": 5,
     "store": "VAL-MAR",
-    "total_price": 1000,
+    "total_price": 26030,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 5206.05,
+        "qty_purchased": 5,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
+        "qty_remaining": 5,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]
   },
   {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
+    "id": 13,
+    "name": "Malla 4mm (Unidad)",
+    "unit": "Malla",
+    "total_purchased": 1,
     "total_withdrawn": 0,
-    "total_remaining": 7,
+    "total_remaining": 1,
     "store": "VAL-MAR",
-    "total_price": 1000,
+    "total_price": 8438,
     "closed": false,
     "history": [
       {
         "date": "11-07-22",
         "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
+        "price": 8438.61,
+        "qty_purchased": 1,
         "qty_withdrawn": 0,
-        "qty_remaining": 10,
-        "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
-      }
-    ]
-  },
-  {
-    "id": 0,
-    "name": "Cal",
-    "unit": "Bolsa",
-    "total_purchased": 10,
-    "total_withdrawn": 0,
-    "total_remaining": 7,
-    "store": "VAL-MAR",
-    "total_price": 1000,
-    "closed": false,
-    "history": [
-      {
-        "date": "11-07-22",
-        "operation": "Compra",
-        "price": 1000,
-        "qty_purchased": 10,
-        "qty_withdrawn": 0,
-        "qty_remaining": 10,
+        "qty_remaining": 1,
         "document_link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
       }
     ]

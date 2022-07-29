@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-import { toast } from 'react-toastify'
+// import { toast } from 'react-toastify'
 import { IoHomeOutline, IoDocumentsOutline } from 'react-icons/io5'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { BsBricks } from 'react-icons/bs'
