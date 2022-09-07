@@ -4,6 +4,7 @@
     "paths": {
       "@/api/*": ["api/*"],
       "@/components/*": ["components/*"],
+      "@/config/*": ["config/*"],
       "@/db/*": ["db/*"],
       "@/context/*": ["services/context/*"],
       "@/hooks/*": ["hooks/*"],

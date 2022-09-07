@@ -1,29 +1,28 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
-// import { toast } from 'react-toastify'
+import { toast } from 'react-toastify'
 import { IoHomeOutline, IoDocumentsOutline } from 'react-icons/io5'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { BsBricks } from 'react-icons/bs'
 import { GlobalContext } from '@/context/GlobalContext'
-import { HeaderSection, Title, ImageContainer } from './Header.styles.jsx'
+import { HeaderSection, Title, UserSection, ImageContainer } from './Header.styles.jsx'
 
 const Header = () => {
   const router = useRouter()
-  const { themeStyle, setThemeStyle } = useContext(GlobalContext)
-  const [selected, setSelected] = useState(false)
-
-  const themeToggler = () => {
-    themeStyle === 'light' ? setThemeStyle('dark') : setThemeStyle('light')
-  }
+  const { handleOpenModal, isAuth, setIsAuth } = useContext(GlobalContext)
 
   const goHome = () => {
     router.push('/')
-    /* toast.success('Welcome Home!') */
   }
 
   const goToPage = (id) => {
     router.push(`/page${id}`)
+  }
+
+  const lockPageHandler = () => {
+    setIsAuth(false)
+    toast.error('Contenido bloqueado')
   }
 
   return (
@@ -57,15 +56,29 @@ const Header = () => {
 
       <Title onClick={() => goHome()}>Proyecto - Casa Nueva</Title>
 
-      <ImageContainer className="themeToogle" onClick={() => themeToggler()}>
-        <Image
-          src="/icon/themeToogle.png"
-          alt="SearchIcon"
-          width="45"
-          height="45"
-          className="themeToogle"
-        />
-      </ImageContainer>
+      <UserSection>
+        {!isAuth ? (
+          <ImageContainer className="themeToogle" onClick={handleOpenModal}>
+            <Image
+              src="/icon/lock.png"
+              alt="UserIcon"
+              width="45"
+              height="45"
+              className="themeToogle"
+            />
+          </ImageContainer>
+        ) : (
+          <ImageContainer className="themeToogle" onClick={lockPageHandler}>
+            <Image
+              src="/icon/unlock.png"
+              alt="UserIcon"
+              width="45"
+              height="45"
+              className="themeToogle"
+            />
+          </ImageContainer>
+        )}
+      </UserSection>
     </HeaderSection>
   )
 }

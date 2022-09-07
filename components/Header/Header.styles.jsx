@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderSection = styled.header`
   width: 100%;
-  height: 6.5rem;
+  height: 6rem;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -24,6 +24,13 @@ export const Title = styled.h1`
   cursor: pointer;
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     font-size: 1.3rem;
+  }
+`
+
+export const UserSection = styled.div`
+  display: flex;
+
+  @media (max-width: ${({ theme }) => theme.device.mobile}) {
   }
 `
 
@@ -102,7 +109,7 @@ export const ImageContainer = styled.div`
     ul.menu {
       position: absolute;
       width: fit-content;
-      margin: 35px 0 0 -50px;
+      margin: 31px 0 0 -50px;
       padding: 25px 80px 25px 50px;
       box-shadow: rgb(139 148 158) 2px 2px 5px -2px;
       border-bottom-right-radius: 10px;
@@ -172,6 +179,33 @@ export const ImageContainer = styled.div`
           :hover {
             box-shadow: none;
           }
+        }
+      }
+    }
+  }
+
+  &.currencyIcon {
+    width: 2.8rem;
+    height: 2.8rem;
+    margin-right: 0.5rem;
+    span {
+      overflow: visible !important;
+      img {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+      }
+    }
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      width: 2.2rem;
+      height: 2.2rem;
+      margin-right: 1rem;
+      span {
+        overflow: visible !important;
+        img {
+          width: 2.2rem;
+          height: 2.2rem;
+          border-radius: 50%;
         }
       }
     }

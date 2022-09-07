@@ -238,7 +238,7 @@ export const Title = styled.h1`
 
 export const Subtitle = styled.h2`
   text-transform: uppercase;
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-bottom: -2rem;
 
   span {
@@ -246,6 +246,16 @@ export const Subtitle = styled.h2`
   }
 
   &.list {
+    margin-bottom: 0;
+  }
+
+  &.currency {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &.pages {
+    margin-top: 2rem;
     margin-bottom: 0;
   }
 

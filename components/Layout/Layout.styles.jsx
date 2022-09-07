@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+/* 
+MeLi Box Shadows
+box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%);
+
+MeLi Bg Color
+#ededed
+ */
+
 export const Container = styled.section`
   width: 100%;
   max-width: 1580px;
@@ -17,12 +25,16 @@ export const Container = styled.section`
     margin-top: 0;
   }
 
+  &.subtitleContainer {
+    margin-top: 0;
+  }
+
   div.MuiPaper-root {
     margin: 1rem;
   }
 
   div.MuiBox-root {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     div {
       margin-left: 0;
