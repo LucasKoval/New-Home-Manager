@@ -6,11 +6,11 @@ import { GlobalProvider } from '@/context/GlobalContext'
 import { GlobalStyle, ToastStyledContainer, lightTheme, darkTheme } from '@/styles/globalStyles'
 
 function MyApp({ Component, pageProps, token }) {
-  const [theme, setTheme] = useState()
+  const [theme, setTheme] = useState('dark')
 
-  useEffect(() => {
+  /* useEffect(() => {
     window.matchMedia('(prefers-color-scheme: dark)').matches ? setTheme('dark') : setTheme('light')
-  }, [])
+  }, []) */
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps, token }) {
       </GlobalProvider>
       <ToastStyledContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick={true}

@@ -19,6 +19,10 @@ export const Item = styled.div`
 
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     flex-flow: column;
-    height: 9.5rem;
+
+    div.currencyIcon {
+      padding: 2.5rem 0;
+      margin: 2rem 0;
+    }
   }
 `

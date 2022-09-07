@@ -5,8 +5,6 @@ import 'dayjs/locale/es'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import CardContainer from '@/components/Layout/CardContainer'
-import { api } from '../../config/apiConfig'
-import axios from 'axios'
 import { get } from 'lodash'
 import { ImageContainer } from '@/components/Header/Header.styles.jsx'
 import { Item } from './Currency.styles.jsx'
@@ -15,14 +13,12 @@ dayjs.locale('es')
 
 const Currency = () => {
   const [currencyData, setCurrencyData] = useState(false)
-  const [updateDate, setUpdateDate] = useState(false)
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('https://api.bluelytics.com.ar/v2/latest')
       const data = await response.json()
       setCurrencyData(data)
-      setUpdateDate(data.last_update)
     }
     fetchData()
   }, [])
@@ -55,7 +51,8 @@ const Currency = () => {
         </div>
       </CardContainer>
       <Item className="date">
-        Actualización: {dayjs(currencyData.last_update).format('D MMMM YYYY - h:MM:ss A')}
+        Actualización:
+        {dayjs(get(currencyData, 'last_update', 0)).format('D MMMM YYYY - h:MM:ss A')}
       </Item>
     </>
   )

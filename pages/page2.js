@@ -21,7 +21,7 @@ export default function Page2() {
     <MainSection className="MainSection">
       {!isAuth ? (
         <PageContainer className="PageContainer">
-          Inicia sesión para ver el contenido.
+          Toque el candado para ver el contenido.
         </PageContainer>
       ) : (
         <>

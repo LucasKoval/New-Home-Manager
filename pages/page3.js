@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useContext } from 'react'
 import Link from 'next/link'
 import Accordion from '@mui/material/Accordion'
 import AccordionSummary from '@mui/material/AccordionSummary'
@@ -25,7 +25,7 @@ export default function Page3() {
     <MainSection className="MainSection">
       {!isAuth ? (
         <PageContainer className="PageContainer">
-          Inicia sesión para ver el contenido.
+          Toque el candado para ver el contenido.
         </PageContainer>
       ) : (
         <>
