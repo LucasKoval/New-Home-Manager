@@ -25,12 +25,16 @@ export const Container = styled.section`
     margin-top: 0;
   }
 
+  &.subtitleContainer {
+    margin-top: 0;
+  }
+
   div.MuiPaper-root {
     margin: 1rem;
   }
 
   div.MuiBox-root {
-    margin-top: 2rem;
+    margin-top: 1rem;
 
     div {
       margin-left: 0;

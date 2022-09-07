@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HeaderSection = styled.header`
   width: 100%;
-  height: 6.5rem;
+  height: 6rem;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -109,7 +109,7 @@ export const ImageContainer = styled.div`
     ul.menu {
       position: absolute;
       width: fit-content;
-      margin: 35px 0 0 -50px;
+      margin: 31px 0 0 -50px;
       padding: 25px 80px 25px 50px;
       box-shadow: rgb(139 148 158) 2px 2px 5px -2px;
       border-bottom-right-radius: 10px;
@@ -187,7 +187,7 @@ export const ImageContainer = styled.div`
   &.currencyIcon {
     width: 2.8rem;
     height: 2.8rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     span {
       overflow: visible !important;
       img {

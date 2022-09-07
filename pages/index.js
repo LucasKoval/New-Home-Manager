@@ -7,13 +7,15 @@ import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
 import CardContainer from '@/components/Layout/CardContainer'
 import Currency from '@/components/Currency'
-import { MainSection, PageContainer } from '@/styles/globalStyles'
+import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
 
 export default function Home() {
   return (
     <MainSection className="MainSection">
       <PageContainer className="PageContainer homepage">
+        <Subtitle className="currency">Dolar Blue</Subtitle>
         <Currency />
+        <Subtitle className="pages">Paginas</Subtitle>
         <CardContainer>
           <Card sx={{ maxWidth: 345 }}>
             <Link href="/page1">

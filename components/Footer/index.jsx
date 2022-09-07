@@ -1,9 +1,17 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import ThemeSwitch from '@/components/Layout/ThemeSwitch'
+import { GlobalContext } from '@/context/GlobalContext'
 import { FooterSection, Container, SubContainer, Title, Credits } from './Footer.styles.jsx'
 
 const Footer = () => {
+  const { themeStyle, setThemeStyle } = useContext(GlobalContext)
+
+  const themeToggler = () => {
+    themeStyle === 'light' ? setThemeStyle('dark') : setThemeStyle('light')
+  }
+
   return (
     <FooterSection className="FooterSection">
       <Container className="footerContainer">
@@ -16,6 +24,7 @@ const Footer = () => {
         </SubContainer>
 
         <SubContainer className="contact">
+          <ThemeSwitch themeToggler={themeToggler} />
           <Link href="https://lucaskovaldev.com/">
             <a target="_blank" rel="noreferrer" title="Portfolio">
               <Image src="/icon/portfolio.svg" alt="Portfolio" width="40px" height="40" />

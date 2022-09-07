@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import { IoHomeOutline, IoDocumentsOutline } from 'react-icons/io5'
 import { MdOutlineDesignServices } from 'react-icons/md'
 import { BsBricks } from 'react-icons/bs'
+
 import { GlobalContext } from '@/context/GlobalContext'
 import { HeaderSection, Title, UserSection, ImageContainer } from './Header.styles.jsx'
 
@@ -58,16 +59,6 @@ const Header = () => {
       <Title onClick={() => goHome()}>Proyecto - Casa Nueva</Title>
 
       <UserSection>
-        <ImageContainer className="themeToogle" onClick={() => themeToggler()}>
-          <Image
-            src="/icon/themeToogle.png"
-            alt="SearchIcon"
-            width="45"
-            height="45"
-            className="themeToogle"
-          />
-        </ImageContainer>
-
         <ImageContainer className="themeToogle" onClick={handleOpenModal}>
           <Image
             src="/icon/user.png"
