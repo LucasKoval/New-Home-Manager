@@ -76,3 +76,11 @@ export const AccordionItemContainer = styled.div`
   @media (max-width: ${({ theme }) => theme.device.tablet}) {
   }
 `
+
+export const CustomTabs = styled.div`
+  div
+    > div
+    > div.MuiTabs-scroller.MuiTabs-hideScrollbar.MuiTabs-scrollableX.css-69z67c-MuiTabs-scroller {
+    border-radius: 4px;
+  }
+`

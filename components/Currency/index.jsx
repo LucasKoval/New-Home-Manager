@@ -51,7 +51,7 @@ const Currency = () => {
         </div>
       </CardContainer>
       <Item className="date">
-        Actualización:
+        Actualización:&nbsp;
         {dayjs(get(currencyData, 'last_update', 0)).format('D MMMM YYYY - h:MM:ss A')}
       </Item>
     </>

@@ -16,7 +16,14 @@ export default function Page1() {
       <PageContainer className="PageContainer">
         <CardContainer>
           {projects.map((project) => (
-            <Card sx={{ maxWidth: 345 }} key={project.id}>
+            <Card
+              sx={{
+                maxWidth: 345,
+                boxShadow: '0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%)',
+              }}
+              key={project.id}
+              id="CARD"
+            >
               <Link href={project.link}>
                 <a target="_blank" rel="noreferrer" title="Abrir documento" className="me-4">
                   <CardActionArea>
