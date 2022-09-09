@@ -17,7 +17,12 @@ export default function Home() {
         <Currency />
         <Subtitle className="pages">Paginas</Subtitle>
         <CardContainer>
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              boxShadow: '0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%)',
+            }}
+          >
             <Link href="/page1">
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>
@@ -35,7 +40,12 @@ export default function Home() {
             </Link>
           </Card>
 
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              boxShadow: '0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%)',
+            }}
+          >
             <Link href="/page2">
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>
@@ -53,7 +63,12 @@ export default function Home() {
             </Link>
           </Card>
 
-          <Card sx={{ maxWidth: 345 }}>
+          <Card
+            sx={{
+              maxWidth: 345,
+              boxShadow: '0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%)',
+            }}
+          >
             <Link href="/page3">
               <a rel="noreferrer" title="Abrir documento" className="me-4">
                 <CardActionArea>

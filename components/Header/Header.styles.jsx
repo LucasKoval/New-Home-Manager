@@ -29,9 +29,6 @@ export const Title = styled.h1`
 
 export const UserSection = styled.div`
   display: flex;
-
-  @media (max-width: ${({ theme }) => theme.device.mobile}) {
-  }
 `
 
 export const ImageContainer = styled.div`
