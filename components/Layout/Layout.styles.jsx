@@ -25,6 +25,10 @@ export const Container = styled.section`
     margin-top: 0;
   }
 
+  &.currencyContainer {
+    margin-top: 0;
+  }
+
   &.subtitleContainer {
     margin-top: 0;
   }
@@ -60,6 +64,10 @@ export const Container = styled.section`
 
     div.MuiBox-root {
       margin-top: 1rem;
+    }
+
+    #currencySection > div > hr {
+      height: 9rem;
     }
   }
 `

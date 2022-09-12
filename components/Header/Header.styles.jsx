@@ -197,6 +197,9 @@ export const ImageContainer = styled.div`
       width: 2.2rem;
       height: 2.2rem;
       margin-right: 1rem;
+      margin-bottom: 2rem !important;
+      padding-bottom: 1rem !important;
+
       span {
         overflow: visible !important;
         img {

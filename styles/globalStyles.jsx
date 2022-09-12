@@ -252,11 +252,24 @@ export const Subtitle = styled.h2`
   &.currency {
     margin-top: 0;
     margin-bottom: 0;
+
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      margin-top: 2rem;
+      margin-bottom: 0.8rem;
+    }
   }
 
   &.pages {
     margin-top: 2rem;
     margin-bottom: 0;
+  }
+
+  &.project {
+    margin-bottom: -1rem;
+
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      margin-bottom: 1rem;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.device.mobile}) {

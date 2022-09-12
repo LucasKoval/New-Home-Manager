@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
-import CardContainer from '@/components/Layout/CardContainer'
+import CurrencyContainer from '@/components/Layout/CurrencyContainer'
 import Currency from '@/components/Currency'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
 
@@ -16,7 +16,7 @@ export default function Home() {
         <Subtitle className="currency">Dolar Blue</Subtitle>
         <Currency />
         <Subtitle className="pages">Paginas</Subtitle>
-        <CardContainer>
+        <CurrencyContainer>
           <Card
             sx={{
               maxWidth: 345,
@@ -85,7 +85,7 @@ export default function Home() {
               </a>
             </Link>
           </Card>
-        </CardContainer>
+        </CurrencyContainer>
       </PageContainer>
     </MainSection>
   )

@@ -4,7 +4,7 @@ import * as dayjs from 'dayjs'
 import 'dayjs/locale/es'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
-import CardContainer from '@/components/Layout/CardContainer'
+import CurrencyContainer from '@/components/Layout/CurrencyContainer'
 import { get } from 'lodash'
 import { ImageContainer } from '@/components/Header/Header.styles.jsx'
 import { Item } from './Currency.styles.jsx'
@@ -25,20 +25,20 @@ const Currency = () => {
 
   return (
     <>
-      <CardContainer>
-        <div>
-          <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={2}>
+      <CurrencyContainer>
+        <div id="currencySection">
+          <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={3}>
             <Item>
               <ImageContainer className="currencyIcon">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              COMPRA: {get(currencyData, 'blue.value_buy', 0)}
+              COMPRA:&nbsp;<span>{get(currencyData, 'blue.value_buy', 0)}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              VENTA: {get(currencyData, 'blue.value_sell', 0)}
+              VENTA:&nbsp;<span>{get(currencyData, 'blue.value_sell', 0)}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon">
@@ -49,7 +49,7 @@ const Currency = () => {
             </Item>
           </Stack>
         </div>
-      </CardContainer>
+      </CurrencyContainer>
       <Item className="date">
         Actualización:&nbsp;
         {dayjs(get(currencyData, 'last_update', 0)).format('D MMMM YYYY - h:MM:ss A')}
