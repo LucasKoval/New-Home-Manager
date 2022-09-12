@@ -37,12 +37,18 @@
   },
   {
     "id": 7,
+    "name": "Planos - Instalaciones",
+    "description": "Planos de Desague, Pluvial, Agua, Gas y Luz",
+    "link": "https://drive.google.com/file/d/1Q4gjjcwOyCPatA0wdeUKAVu6zBysFR3k/view?usp=sharing"
+  },
+  {
+    "id": 8,
     "name": "Listado - Materiales",
     "description": "Listado de materiales por etapas.",
     "link": "https://drive.google.com/file/d/1W02tq21Wlxbj32fA639DhkvtQSCMhn_3/view?usp=sharing"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Listado - Tareas",
     "description": "Listado de tareas por etapas.",
     "link": "https://drive.google.com/file/d/1kyYRkRPkhyDY0pe9LG6nwBeXiAhhsodc/view?usp=sharing"

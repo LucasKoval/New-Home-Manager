@@ -5,16 +5,16 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import { CardActionArea } from '@mui/material'
-import CardContainer from '@/components/Layout/CardContainer'
+import CurrencyContainer from '@/components/Layout/CurrencyContainer'
 import { MainSection, PageContainer, Subtitle } from '@/styles/globalStyles'
 import projects from '@/db/project.json'
 
 export default function Page1() {
   return (
     <MainSection className="MainSection">
-      <Subtitle>Proyecto - Arquitecta</Subtitle>
+      <Subtitle className="project">Proyecto - Arquitecta</Subtitle>
       <PageContainer className="PageContainer">
-        <CardContainer>
+        <CurrencyContainer>
           {projects.map((project) => (
             <Card
               sx={{
@@ -41,7 +41,7 @@ export default function Page1() {
               </Link>
             </Card>
           ))}
-        </CardContainer>
+        </CurrencyContainer>
       </PageContainer>
     </MainSection>
   )
