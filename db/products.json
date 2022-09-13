@@ -27,7 +27,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 1,
         "qty_remaining": 249,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1KOAhBxfximnVBTAbhiipqU9c-VzSHQlX/view?usp=sharing"
       },
       {
         "date": "26-08-22",
@@ -36,7 +36,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 1,
         "qty_remaining": 248,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1g1Bf_8D4DntIVtAfEJwAl2eKadERLTf-/view?usp=sharing"
       },
       {
         "date": "05-09-22",
@@ -45,7 +45,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 20,
         "qty_remaining": 228,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1Yiwo2vAkUaKpc9T7fpUOztTAzk27kgBW/view?usp=sharing"
       }
     ]
   },
@@ -77,7 +77,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 1,
         "qty_remaining": 291,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1g1Bf_8D4DntIVtAfEJwAl2eKadERLTf-/view?usp=sharing"
       }
     ]
   },
@@ -109,7 +109,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 1,
         "qty_remaining": 49,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/13El7mRtUAPZJxnPGqrWhilrc-WIgKBEA/view?usp=sharing"
       },
       {
         "date": "05-09-22",
@@ -118,7 +118,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 3,
         "qty_remaining": 46,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1Yiwo2vAkUaKpc9T7fpUOztTAzk27kgBW/view?usp=sharing"
       }
     ]
   },
@@ -127,12 +127,12 @@
     "name": "Hierro 10 (Barra)",
     "unit": "Barra",
     "total_purchased": 150,
-    "total_withdrawn": 0,
-    "total_remaining": 150,
+    "total_withdrawn": 150,
+    "total_remaining": 0,
     "store": "VAL-MAR",
     "stage": "cerramientos",
     "total_price": 373615,
-    "closed": false,
+    "closed": true,
     "history": [
       {
         "date": "06-07-22",
@@ -142,6 +142,15 @@
         "qty_withdrawn": 0,
         "qty_remaining": 150,
         "document_link": "https://drive.google.com/file/d/1Y4AFIhZfNJrAJ_wIfPgONA-eEcQSZLei/view?usp=sharing"
+      },
+      {
+        "date": "22-08-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 150,
+        "qty_remaining": 0,
+        "document_link": ""
       }
     ]
   },
@@ -150,12 +159,12 @@
     "name": "Hierro 8 (Barra)",
     "unit": "Barra",
     "total_purchased": 25,
-    "total_withdrawn": 0,
-    "total_remaining": 25,
+    "total_withdrawn": 25,
+    "total_remaining": 0,
     "store": "VAL-MAR",
     "stage": "cerramientos",
     "total_price": 39751,
-    "closed": false,
+    "closed": true,
     "history": [
       {
         "date": "06-07-22",
@@ -165,6 +174,15 @@
         "qty_withdrawn": 0,
         "qty_remaining": 25,
         "document_link": "https://drive.google.com/file/d/1Y4AFIhZfNJrAJ_wIfPgONA-eEcQSZLei/view?usp=sharing"
+      },
+      {
+        "date": "22-08-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 25,
+        "qty_remaining": 0,
+        "document_link": ""
       }
     ]
   },
@@ -173,12 +191,12 @@
     "name": "Hierro 6 (Barra)",
     "unit": "Barra",
     "total_purchased": 120,
-    "total_withdrawn": 0,
-    "total_remaining": 120,
+    "total_withdrawn": 120,
+    "total_remaining": 0,
     "store": "VAL-MAR",
     "stage": "cerramientos",
     "total_price": 112860,
-    "closed": false,
+    "closed": true,
     "history": [
       {
         "date": "06-07-22",
@@ -188,6 +206,15 @@
         "qty_withdrawn": 0,
         "qty_remaining": 120,
         "document_link": "https://drive.google.com/file/d/1Y4AFIhZfNJrAJ_wIfPgONA-eEcQSZLei/view?usp=sharing"
+      },
+      {
+        "date": "22-08-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 120,
+        "qty_remaining": 0,
+        "document_link": ""
       }
     ]
   },
@@ -196,12 +223,12 @@
     "name": "Alambre (Kg)",
     "unit": "Kg",
     "total_purchased": 30,
-    "total_withdrawn": 0,
-    "total_remaining": 30,
+    "total_withdrawn": 30,
+    "total_remaining": 0,
     "store": "VAL-MAR",
     "stage": "cerramientos",
     "total_price": 25847,
-    "closed": false,
+    "closed": true,
     "history": [
       {
         "date": "06-07-22",
@@ -220,6 +247,15 @@
         "qty_withdrawn": 0,
         "qty_remaining": 30,
         "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+      },
+      {
+        "date": "22-08-22",
+        "operation": "Retiro",
+        "price": 0,
+        "qty_purchased": 0,
+        "qty_withdrawn": 30,
+        "qty_remaining": 0,
+        "document_link": ""
       }
     ]
   },
@@ -274,7 +310,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 144,
         "qty_remaining": 1056,
-        "document_link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/13El7mRtUAPZJxnPGqrWhilrc-WIgKBEA/view?usp=sharing"
       }
     ]
   },
@@ -582,7 +618,7 @@
         "qty_purchased": 0,
         "qty_withdrawn": 1,
         "qty_remaining": 0,
-        "document_link": "https://drive.google.com/file/d/1iGAZLJpde2NLfNx544rxcKqH-jc6EuTy/view?usp=sharing"
+        "document_link": "https://drive.google.com/file/d/1Yiwo2vAkUaKpc9T7fpUOztTAzk27kgBW/view?usp=sharing"
       }
     ]
   }
