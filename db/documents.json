@@ -7,7 +7,7 @@
     "date": "07-06-22",
     "description": "Compra de materiales para el techo.",
     "stage": "techo",
-    "total amount": 617670.01,
+    "total_amount": 617670,
     "link": "https://drive.google.com/file/d/1xZEPQolojm7tpYHgtgTLhhn60gZ_AMzQ/view?usp=sharing"
   },
   {
@@ -18,7 +18,7 @@
     "date": "06-07-22",
     "description": "Compra de hierro para estructura y cerramientos.",
     "stage": "cerramientos",
-    "total amount": 540383.15,
+    "total_amount": 540383,
     "link": "https://drive.google.com/file/d/1Y4AFIhZfNJrAJ_wIfPgONA-eEcQSZLei/view?usp=sharing"
   },
   {
@@ -29,7 +29,7 @@
     "date": "11-07-22",
     "description": "Compra de materiales para estructura y cerramientos.",
     "stage": "cerramientos",
-    "total amount": 1683039.03,
+    "total_amount": 1683039,
     "link": "https://drive.google.com/file/d/1eKVT5iZuL8i7Ywg6gTyqr2so9mglb9eO/view?usp=sharing"
   },
   {
@@ -40,7 +40,51 @@
     "date": "13-07-22",
     "description": "Compra de ceresita para estructura y cerramientos.",
     "stage": "cerramientos",
-    "total amount": 22458,
+    "total_amount": 22458,
     "link": "https://drive.google.com/file/d/1iGAZLJpde2NLfNx544rxcKqH-jc6EuTy/view?usp=sharing"
+  },
+  {
+    "id": 5,
+    "name": "Factura A",
+    "type": "factura",
+    "store": "VAL-MAR",
+    "date": "05-08-22",
+    "description": "Compra de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 104022,
+    "link": "https://drive.google.com/file/d/1yswzbbfI_oWjIVGTT3Ofm-QIuwaZbo22/view?usp=sharing"
+  },
+  {
+    "id": 6,
+    "name": "Factura A",
+    "type": "factura",
+    "store": "VAL-MAR",
+    "date": "25-08-22",
+    "description": "Compra de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 300738,
+    "link": "https://drive.google.com/file/d/1yswzbbfI_oWjIVGTT3Ofm-QIuwaZbo22/view?usp=sharing"
+  },
+  {
+    "id": 7,
+    "name": "Factura A",
+    "type": "factura",
+    "store": "VAL-MAR",
+    "date": "25-08-22",
+    "description": "Compra de piedras para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 9901,
+    "link": "https://drive.google.com/file/d/1yswzbbfI_oWjIVGTT3Ofm-QIuwaZbo22/view?usp=sharing"
+  },
+  {
+    "id": 8,
+    "name": "Factura A",
+    "type": "factura",
+    "store": "VAL-MAR",
+    "date": "05-09-22",
+    "description": "Compra de materiales para pilar de servicios.",
+    "stage": "cerramientos",
+    "total_amount": 14884,
+    "link": "https://drive.google.com/file/d/19rH554O5rlapiznvJdfoGTNGIZXo8ENP/view?usp=sharing"
   }
 ]
