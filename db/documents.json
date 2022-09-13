@@ -86,5 +86,71 @@
     "stage": "cerramientos",
     "total_amount": 14884,
     "link": "https://drive.google.com/file/d/19rH554O5rlapiznvJdfoGTNGIZXo8ENP/view?usp=sharing"
+  },
+  {
+    "id": 9,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "18-08-22",
+    "description": "Retiro de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": "https://drive.google.com/file/d/13El7mRtUAPZJxnPGqrWhilrc-WIgKBEA/view?usp=sharing"
+  },
+  {
+    "id": 10,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "22-08-22",
+    "description": "Retiro de hierro para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": ""
+  },
+  {
+    "id": 11,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "25-08-22",
+    "description": "Retiro de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": "https://drive.google.com/file/d/1KOAhBxfximnVBTAbhiipqU9c-VzSHQlX/view?usp=sharing"
+  },
+  {
+    "id": 12,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "26-08-22",
+    "description": "Retiro de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": "https://drive.google.com/file/d/1g1Bf_8D4DntIVtAfEJwAl2eKadERLTf-/view?usp=sharing"
+  },
+  {
+    "id": 13,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "02-09-22",
+    "description": "Retiro de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": "https://drive.google.com/file/d/15OFfJv5fSU25w7OBIxGW8nhLPxrekoVe/view?usp=sharing"
+  },
+  {
+    "id": 14,
+    "name": "Remito",
+    "type": "remito",
+    "store": "VAL-MAR",
+    "date": "05-09-22",
+    "description": "Retiro de materiales para estructura y cerramientos.",
+    "stage": "cerramientos",
+    "total_amount": 0,
+    "link": "https://drive.google.com/file/d/1Yiwo2vAkUaKpc9T7fpUOztTAzk27kgBW/view?usp=sharing"
   }
 ]
