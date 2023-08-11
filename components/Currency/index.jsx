@@ -32,6 +32,32 @@ const Currency = () => {
               <ImageContainer className="currencyIcon">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
+              COMPRA:&nbsp;<span>{get(currencyData, 'oficial.value_buy', 0)}</span>
+            </Item>
+            <Item>
+              <ImageContainer className="currencyIcon">
+                <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
+              VENTA:&nbsp;<span>{get(currencyData, 'oficial.value_sell', 0)}</span>
+            </Item>
+            <Item>
+              <ImageContainer className="currencyIcon">
+                <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
+              PROMEDIO:&nbsp;
+              <span className="average">{get(currencyData, 'oficial.value_avg', 0)}</span>
+            </Item>
+          </Stack>
+        </div>
+      </CurrencyContainer>
+
+      <CurrencyContainer>
+        <div id="currencySection">
+          <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={3}>
+            <Item>
+              <ImageContainer className="currencyIcon">
+                <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               COMPRA:&nbsp;<span>{get(currencyData, 'blue.value_buy', 0)}</span>
             </Item>
             <Item>
