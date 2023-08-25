@@ -29,7 +29,7 @@ const AuthModal = ({ openModal, handleCloseModal }) => {
 
   const submitHandler = (event) => {
     event.preventDefault()
-    if (password === 'sarita') {
+    if (password === '167943') {
       console.log('Access granted!')
       setIsAuth(true)
       handleCloseModal()

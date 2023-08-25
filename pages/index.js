@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <MainSection className="MainSection">
       <PageContainer className="PageContainer homepage">
-        <Subtitle className="currency">Dolar BNA - Blue - CCL</Subtitle>
+        <Subtitle className="currency">Dolar BNA - Blue - CCL - MEP</Subtitle>
         <Currency />
         <Subtitle className="pages">Paginas</Subtitle>
         <CurrencyContainer>
