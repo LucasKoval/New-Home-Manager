@@ -210,4 +210,11 @@ export const ImageContainer = styled.div`
       }
     }
   }
+
+  &.isMobile {
+    display: none;
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      display: block;
+    }
+  }
 `

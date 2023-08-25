@@ -6,6 +6,11 @@ export const Item = styled.div`
   justify-content: center;
   align-items: center;
 
+  &.lastItem {
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      margin-bottom: 3.5rem;
+    }
+  }
   span {
     padding: 0.5rem;
     
@@ -48,7 +53,8 @@ export const Item = styled.div`
       font-weight: bold;
       color: ${(props) => props.theme.fontColor.author};
       border: 1px solid;
-    margin-left: 8px;
+      margin-left: 8px;
+      padding: 0.25rem;
     }
   }
 

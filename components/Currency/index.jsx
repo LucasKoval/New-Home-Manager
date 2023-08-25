@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import Image from 'next/image'
 import * as dayjs from 'dayjs'
 import 'dayjs/locale/es'
 import Divider from '@mui/material/Divider'
 import Stack from '@mui/material/Stack'
 import CurrencyContainer from '@/components/Layout/CurrencyContainer'
+import { GlobalContext } from '@/context/GlobalContext'
 import { get } from 'lodash'
 import { ImageContainer } from '@/components/Header/Header.styles.jsx'
 import { Item } from './Currency.styles.jsx'
@@ -12,6 +13,7 @@ import { Item } from './Currency.styles.jsx'
 dayjs.locale('es')
 
 const Currency = () => {
+  const { isAuth } = useContext(GlobalContext)
   const [oficialData, setOficialData] = useState(false)
   const [blueData, setBlueData] = useState(false)
   const [cclData, setCclData] = useState(false)
@@ -68,9 +70,15 @@ const Currency = () => {
               <span className="average">{parseInt(get(oficialData, 'compra', 0))}</span>
             </Item>
             <Item>
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0))}</span>
             </Item>
             <Item>
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               PROMEDIO:&nbsp;
               <span>{parseInt((oficialData.compra + oficialData.venta) / 2)}</span>
             </Item>
@@ -88,9 +96,15 @@ const Currency = () => {
               COMPRA:&nbsp;<span>{parseInt(get(blueData, 'compra', 0))}</span>
             </Item>
             <Item>
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/dollar-blue.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               VENTA:&nbsp;<span>{parseInt(get(blueData, 'venta', 0))}</span>
             </Item>
             <Item>
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/dollar-blue.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               PROMEDIO:&nbsp;
               <span className="average">{parseInt((blueData.compra + blueData.venta) / 2)}</span>
             </Item>
@@ -109,36 +123,48 @@ const Currency = () => {
               <span className="average">{parseInt(get(cclData, 'compra', 0))}</span>
             </Item>
             <Item>
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
               VENTA:&nbsp;<span>{parseInt(get(cclData, 'venta', 0))}</span>
             </Item>
             <Item>
-              MEP:&nbsp;
+              <ImageContainer className="currencyIcon isMobile">
+                <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
+              </ImageContainer>
+              DOLAR MEP:&nbsp;
               <span>{parseInt(get(mepData, 'compra', 0))}</span>
             </Item>
           </Stack>
         </div>
       </CurrencyContainer>
 
-      <CurrencyContainer>
-        <div id="currencySection">
-          <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={3}>
-            <Item>
-              <ImageContainer className="currencyIcon">
-                <Image src="/icon/salary.png" alt="SearchIcon" width="45" height="45" />
-              </ImageContainer>
-              Salario + alquiler:
-              <span className="finalValues">
-                U$S {parseInt(salaryDolar).toLocaleString('es')} |
-                <span className={salaryStatus}>
-                  {(salaryPeso - plusForRent).toLocaleString('es')}
+      {isAuth && (
+        <CurrencyContainer>
+          <div id="currencySection">
+            <Stack
+              direction="row"
+              divider={<Divider orientation="vertical" flexItem />}
+              spacing={3}
+            >
+              <Item className="lastItem">
+                <ImageContainer className="currencyIcon lastItem">
+                  <Image src="/icon/salary.png" alt="SearchIcon" width="45" height="45" />
+                </ImageContainer>
+                Salario + Alquiler:
+                <span className="finalValues">
+                  U$S {parseInt(salaryDolar).toLocaleString('es')} |{' '}
+                  <span className={salaryStatus}>
+                    {(salaryPeso - plusForRent).toLocaleString('es')}
+                  </span>
+                  + {plusForRent.toLocaleString('es')} =
+                  <span className="finalSalary">$ {salaryPeso.toLocaleString('es')}</span>
                 </span>
-                + {plusForRent.toLocaleString('es')} =
-                <span className="finalSalary">$ {salaryPeso.toLocaleString('es')}</span>
-              </span>
-            </Item>
-          </Stack>
-        </div>
-      </CurrencyContainer>
+              </Item>
+            </Stack>
+          </div>
+        </CurrencyContainer>
+      )}
 
       <Item className="date">
         Actualización:&nbsp;
