@@ -156,7 +156,7 @@ const Currency = () => {
                   U$S {parseInt(salaryDolar).toLocaleString('es')} |{' '}
                   <span className={salaryStatus}>
                     {(salaryPeso - plusForRent).toLocaleString('es')}
-                  </span>
+                  </span>{' '}
                   + {plusForRent.toLocaleString('es')} =
                   <span className="finalSalary">$ {salaryPeso.toLocaleString('es')}</span>
                 </span>
