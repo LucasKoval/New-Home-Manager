@@ -48,7 +48,7 @@ export const Item = styled.div`
       color: #009A17;
     }
 
-    &.finalSalary{
+    &.finalSalary {
       font-size: 18px;
       font-weight: bold;
       color: ${(props) => props.theme.fontColor.author};
@@ -56,6 +56,15 @@ export const Item = styled.div`
       margin-left: 8px;
       padding: 0.25rem;
     }
+  }
+
+  div.finalFamilySalary {
+    font-size: 18px;
+    font-weight: bold;
+    color: #009A17;
+    border: 1px solid;
+    padding: 0.25rem;
+    margin-top: 8px;
   }
 
   &.date {

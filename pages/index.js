@@ -15,7 +15,7 @@ export default function Home() {
       <PageContainer className="PageContainer homepage">
         <Subtitle className="currency">Dolar BNA - Blue - CCL - MEP</Subtitle>
         <Currency />
-        <Subtitle className="pages">Paginas</Subtitle>
+        {/* <Subtitle className="pages">Paginas</Subtitle> */}
         <CurrencyContainer>
           <Card
             sx={{
