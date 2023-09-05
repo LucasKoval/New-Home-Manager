@@ -70,6 +70,12 @@ export const Container = styled.section`
       height: 9rem;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.device.mobile}) {
+    #salarySection {
+      margin-top: 2rem;
+    }
+  }
 `
 
 export const AccordionItemContainer = styled.div`

@@ -21,8 +21,10 @@ const Currency = () => {
   const [salaryDolar, setSalaryDolar] = useState(false)
   const [salaryPeso, setSalaryPeso] = useState(false)
   const [salaryStatus, setSalaryStatus] = useState(false)
-  const actualSalary = 320400
+  const actualSalary = 320409
+  const yaniSalary = 326000
   const plusForRent = 35000
+  const plusForBonus = 30000
   const badSalary = 600000
   const mediumSalary = 665000
 
@@ -35,20 +37,20 @@ const Currency = () => {
       const blueElement = currencyResponseData.find((data) => data.casa === 'blue')
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
-      const oficial = parseInt(oficialElement.compra)
-      const ccl = parseInt(cclElement.compra)
+      const oficial = parseInt(oficialElement.compra) - 1.5 // Eliminar "-1.5" en Octubre
+      const ccl = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
 
       setOficialData(oficialElement)
       setBlueData(blueElement)
       setCclData(cclElement)
       setMepData(mepElement)
 
-      setSalaryDolar(actualSalary / oficial)
-      setSalaryPeso(parseInt(actualSalary / oficial) * ccl + plusForRent)
+      setSalaryDolar((actualSalary + plusForBonus) / oficial)
+      setSalaryPeso(parseInt((actualSalary + plusForBonus) / oficial) * ccl + plusForRent)
 
-      if (parseInt(actualSalary / oficial) * ccl <= badSalary) {
+      if (parseInt((actualSalary + plusForBonus) / oficial) * ccl <= badSalary) {
         setSalaryStatus('red')
-      } else if (parseInt(actualSalary / oficial) * ccl <= mediumSalary) {
+      } else if (parseInt((actualSalary + plusForBonus) / oficial) * ccl <= mediumSalary) {
         setSalaryStatus('yellow')
       } else {
         setSalaryStatus('green')
@@ -67,7 +69,8 @@ const Currency = () => {
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               COMPRA:&nbsp;
-              <span className="average">{parseInt(get(oficialData, 'compra', 0))}</span>
+              <span className="average">{parseInt(get(oficialData, 'compra', 0)) - 1.5}</span>
+              {/* Eliminar "-1.5" en Octubre */}
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
@@ -120,7 +123,7 @@ const Currency = () => {
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               COMPRA:&nbsp;
-              <span className="average">{parseInt(get(cclData, 'compra', 0))}</span>
+              <span>{parseInt(get(cclData, 'compra', 0))}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
@@ -132,8 +135,10 @@ const Currency = () => {
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              DOLAR MEP:&nbsp;
-              <span>{parseInt(get(mepData, 'compra', 0))}</span>
+              PROM. PPI:&nbsp;
+              <span className="average">
+                {(parseInt(get(cclData, 'compra', 0)) + parseInt(get(cclData, 'venta', 0))) / 2}
+              </span>
             </Item>
           </Stack>
         </div>
@@ -141,17 +146,14 @@ const Currency = () => {
 
       {isAuth && (
         <CurrencyContainer>
-          <div id="currencySection">
+          <div id="salarySection">
             <Stack
               direction="row"
               divider={<Divider orientation="vertical" flexItem />}
               spacing={3}
             >
               <Item className="lastItem">
-                <ImageContainer className="currencyIcon lastItem">
-                  <Image src="/icon/salary.png" alt="SearchIcon" width="45" height="45" />
-                </ImageContainer>
-                Salario + Alquiler:
+                Salario + Bono + Alquiler:
                 <span className="finalValues">
                   U$S {parseInt(salaryDolar).toLocaleString('es')} |{' '}
                   <span className={salaryStatus}>
@@ -159,6 +161,31 @@ const Currency = () => {
                   </span>{' '}
                   + {plusForRent.toLocaleString('es')} =
                   <span className="finalSalary">$ {salaryPeso.toLocaleString('es')}</span>
+                </span>
+              </Item>
+            </Stack>
+
+            <Stack
+              direction="row"
+              divider={<Divider orientation="vertical" flexItem style={{ height: '5rem' }} />}
+              spacing={3}
+              style={{
+                textAlign: 'center',
+                display: 'flex',
+                alignItems: 'baseline',
+                justifyContent: 'center',
+              }}
+            >
+              <Item className="lastItem">
+                Salario Yani:
+                <span className="finalValues">$ {yaniSalary.toLocaleString('es')}</span>
+              </Item>
+              <Item className="lastItem">
+                <span>
+                  Ingreso Familiar:
+                  <div className="finalFamilySalary">
+                    $ {(salaryPeso + yaniSalary).toLocaleString('es')}
+                  </div>
                 </span>
               </Item>
             </Stack>
