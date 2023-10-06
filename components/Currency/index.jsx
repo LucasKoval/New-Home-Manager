@@ -22,11 +22,11 @@ const Currency = () => {
   const [salaryPeso, setSalaryPeso] = useState(false)
   const [salaryStatus, setSalaryStatus] = useState(false)
   const actualSalary = 320409
-  const yaniSalary = 326000
+  const yaniSalary = 374000
   const plusForRent = 35000
   const plusForBonus = 30000
-  const badSalary = 600000
-  const mediumSalary = 665000
+  const badSalary = 715000
+  const mediumSalary = 800000
 
   useEffect(() => {
     const fetchData = async () => {
