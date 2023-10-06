@@ -24,9 +24,9 @@ const Currency = () => {
   const plusForRent = 35000
   const plusForBonus = 30000
   const actualSalary = 320409
-  const yaniSalary = 326000 + plusForBonus
-  const badSalary = 600000
-  const mediumSalary = 665000
+  const yaniSalary = 374000 + plusForBonus
+  const badSalary = 715000
+  const mediumSalary = 800000
 
   useEffect(() => {
     const fetchData = async () => {
