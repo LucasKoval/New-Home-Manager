@@ -30,7 +30,6 @@ const AuthModal = ({ openModal, handleCloseModal }) => {
   const submitHandler = (event) => {
     event.preventDefault()
     if (password === '167943') {
-      console.log('Access granted!')
       setIsAuth(true)
       handleCloseModal()
       toast.success('Contenido desbloqueado!')
@@ -40,7 +39,6 @@ const AuthModal = ({ openModal, handleCloseModal }) => {
   }
 
   const passwordHandler = (event) => {
-    console.log(event.target.value)
     setPassword(event.target.value)
   }
 
