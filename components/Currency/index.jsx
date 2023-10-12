@@ -22,35 +22,39 @@ const Currency = () => {
   const [salaryPeso, setSalaryPeso] = useState(false)
   const [salaryStatus, setSalaryStatus] = useState(false)
   const plusForRent = 35000
-  const plusForBonus = 30000
-  const actualSalary = 320409
-  const yaniSalary = 374000 + plusForBonus
+  const plusForBonus = 0
+  const currentSalary = 417012
+  const yaniSalary = 374000
   const badSalary = 715000
   const mediumSalary = 800000
+  const tarjeta = 731
 
   useEffect(() => {
     const fetchData = async () => {
       const currencyResponse = await fetch('https://dolarapi.com/v1/dolares/')
       const currencyResponseData = await currencyResponse.json()
+      console.log('currencyResponseData:', currencyResponseData)
 
       const oficialElement = currencyResponseData.find((data) => data.casa === 'oficial')
       const blueElement = currencyResponseData.find((data) => data.casa === 'blue')
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
       const oficial = parseInt(oficialElement.compra) - 1.5 // Eliminar "-1.5" en Octubre
-      const ccl = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
+      const ccl = 870
+      //const ccl = parseInt(cclElement.compra)
+      //const ccl = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
 
       setOficialData(oficialElement)
       setBlueData(blueElement)
       setCclData(cclElement)
       setMepData(mepElement)
 
-      setSalaryDolar((actualSalary + plusForBonus) / oficial)
-      setSalaryPeso(parseInt((actualSalary + plusForBonus) / oficial) * ccl + plusForRent)
+      setSalaryDolar((currentSalary + plusForBonus) / oficial)
+      setSalaryPeso(parseInt((currentSalary + plusForBonus) / oficial) * ccl + plusForRent)
 
-      if (parseInt((actualSalary + plusForBonus) / oficial) * ccl <= badSalary) {
+      if (parseInt((currentSalary + plusForBonus) / oficial) * ccl <= badSalary) {
         setSalaryStatus('red')
-      } else if (parseInt((actualSalary + plusForBonus) / oficial) * ccl <= mediumSalary) {
+      } else if (parseInt((currentSalary + plusForBonus) / oficial) * ccl <= mediumSalary) {
         setSalaryStatus('yellow')
       } else {
         setSalaryStatus('green')
@@ -76,14 +80,14 @@ const Currency = () => {
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0))}</span>
+              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0)) - 1.5}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              PROMEDIO:&nbsp;
-              <span>{parseInt((oficialData.compra + oficialData.venta) / 2)}</span>
+              TARJETA:&nbsp;
+              <span>{(parseInt(get(oficialData, 'venta', 0)) - 1.5) * 2}</span>
             </Item>
           </Stack>
         </div>
@@ -153,7 +157,7 @@ const Currency = () => {
               spacing={3}
             >
               <Item className="lastItem">
-                Salario + Bono + Alquiler:
+                Salario + Alquiler:
                 <span className="finalValues">
                   U$S {parseInt(salaryDolar).toLocaleString('es')} |{' '}
                   <span className={salaryStatus}>
