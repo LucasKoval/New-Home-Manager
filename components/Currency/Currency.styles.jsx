@@ -8,7 +8,8 @@ export const Item = styled.div`
 
   &.lastItem {
     @media (max-width: ${({ theme }) => theme.device.mobile}) {
-      margin-bottom: 3.5rem;
+      margin-bottom: 1rem;
+      width: max-content;
     }
   }
   span {
@@ -69,11 +70,26 @@ export const Item = styled.div`
 
   &.date {
     height: 1rem;
-    margin-top: 0.5rem;
 
     @media (max-width: ${({ theme }) => theme.device.mobile}) {
-      margin-top: 0.8rem;
+      margin-top: 1rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  &.bna {
+    height: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    span.bna {
+      display: contents;
+      font-weight: bold;
+    }
+
+    @media (max-width: ${({ theme }) => theme.device.mobile}) {
+      margin-top: 1.7rem;
+      margin-bottom: 3rem;
     }
   }
 

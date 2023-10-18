@@ -55,6 +55,14 @@ export const Container = styled.section`
     }
   }
 
+  #currencySection {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  &:nth-child(3) {
+    margin: -1rem 0;
+  }
+
   @media (max-width: ${({ theme }) => theme.device.tablet}) {
     margin-top: 0;
 
@@ -66,14 +74,22 @@ export const Container = styled.section`
       margin-top: 1rem;
     }
 
+    #currencySection {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
     #currencySection > div > hr {
-      height: 9rem;
+      height: 8.2rem;
+    }
+
+    &:nth-child(3) {
+      margin: 0;
     }
   }
 
   @media (max-width: ${({ theme }) => theme.device.mobile}) {
     #salarySection {
-      margin-top: 2rem;
+      margin-top: 1rem;
     }
   }
 `
