@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <MainSection className="MainSection">
       <PageContainer className="PageContainer homepage">
-        <Subtitle className="currency">Dolar BNA - Blue - CCL - MEP</Subtitle>
+        <Subtitle className="currency">Dolar BNA - Blue - CCL - PPI</Subtitle>
         <Currency />
         {/* <Subtitle className="pages">Paginas</Subtitle> */}
         {!isAuth && (
