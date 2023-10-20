@@ -49,7 +49,7 @@ const Currency = () => {
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
       const oficial = parseInt(oficialElement.compra) - 0.5 // Eliminar "-0.5" en Octubre
-      const ccl_ppi = parseInt(cclElement.compra) - 10
+      const ccl_ppi = parseInt(cclElement.venta) + 20
       //const ccl_ppi = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
@@ -159,7 +159,7 @@ const Currency = () => {
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              PROM. PPI:&nbsp;
+              LETRAS PPI:&nbsp;
               <span className="average">{ppiData}</span>
             </Item>
           </Stack>
