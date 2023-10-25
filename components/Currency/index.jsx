@@ -35,8 +35,8 @@ const Currency = () => {
   const badPercentage = 40
   const mediumPercentage = 20
   const valtechLastBNAValue = 267
-  const valtechLastBNAMonth = '20/7'
-  const updateSalaryMonth = 'Octubre'
+  const valtechLastBNAMonth = '23/10/23'
+  const updateSalaryMonth = 'Enero'
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,7 +49,7 @@ const Currency = () => {
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
       const oficial = parseInt(oficialElement.compra) - 0.5 // Eliminar "-0.5" en Octubre
-      const ccl_ppi = parseInt(cclElement.venta) + 20
+      const ccl_ppi = parseInt(cclElement.venta)
       //const ccl_ppi = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
@@ -225,7 +225,7 @@ const Currency = () => {
         <span className="bna">{valtechLastBNAValue}</span> ({valtechLastBNAMonth})
         <br />
         Próxima actualización BNA:&nbsp;
-        <span className="bna">{updateSalaryMonth}</span> (23/10)
+        <span className="bna">{updateSalaryMonth}</span> (22/01/24)
         <br />
         Diferencia BNA actual con UVT:&nbsp;
         <span className={`bna ${lossStatus}`}>{lossPercentage.toLocaleString('es')}%</span>
