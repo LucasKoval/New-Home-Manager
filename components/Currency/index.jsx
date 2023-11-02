@@ -27,14 +27,14 @@ const Currency = () => {
   const [lossPercentage, setLossPercentage] = useState(0)
   const plusForRent = 35000
   const plusForBonus = 0
-  const plusExtraYani = 50000
+  const plusExtraYani = 40000
   const currentSalary = 417012
   const yaniSalary = 374000 + plusExtraYani
-  const badSalary = 900000
-  const mediumSalary = 1000000
+  const badSalary = 1000000
+  const mediumSalary = 1100000
   const badPercentage = 40
   const mediumPercentage = 20
-  const valtechLastBNAValue = 267
+  const valtechLastBNAValue = 347.5
   const valtechLastBNAMonth = '23/10/23'
   const updateSalaryMonth = 'Enero'
 
@@ -49,7 +49,7 @@ const Currency = () => {
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
       const oficial = parseInt(oficialElement.compra) - 0.5 // Eliminar "-0.5" en Octubre
-      const ccl_ppi = parseInt(cclElement.venta)
+      const ccl_ppi = parseInt((cclElement.compra + cclElement.compra) / 2 + 12)
       //const ccl_ppi = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
@@ -146,14 +146,17 @@ const Currency = () => {
               <ImageContainer className="currencyIcon">
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              COMPRA:&nbsp;
-              <span>{parseInt(get(cclData, 'compra', 0))}</span>
+              CCL PROM:&nbsp;
+              <span>{parseInt((get(cclData, 'compra', 0) + get(cclData, 'venta', 0)) / 2)}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              VENTA:&nbsp;<span>{parseInt(get(cclData, 'venta', 0))}</span>
+              CCL PPI:&nbsp;
+              <span>
+                {parseInt((get(cclData, 'compra', 0) + get(cclData, 'venta', 0)) / 2 - 12)}
+              </span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
@@ -199,7 +202,7 @@ const Currency = () => {
               }}
             >
               <Item className="lastItem">
-                Salario Yani:
+                Salario Yani + Essen:
                 <span className="finalSalary">$ {yaniSalary.toLocaleString('es')}</span>
               </Item>
               <Item className="lastItem">
