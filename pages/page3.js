@@ -9,6 +9,11 @@ import Divider from '@mui/material/Divider'
 import IconButton from '@mui/material/IconButton'
 import Tooltip from '@mui/material/Tooltip'
 import AccordionItem from '@/components/Layout/AccordionItem'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import { CardActionArea } from '@mui/material'
+import CurrencyContainer from '@/components/Layout/CurrencyContainer'
 import { GrDocumentPdf } from 'react-icons/gr'
 import { FcInfo } from 'react-icons/fc'
 import { GlobalContext } from '@/context/GlobalContext'
@@ -32,6 +37,40 @@ export default function Page3() {
           <Subtitle>Documentos</Subtitle>
           <PageContainer className="PageContainer">
             <div className="accordion-container">
+              <CurrencyContainer>
+                <Card
+                  sx={{
+                    maxWidth: 345,
+                    boxShadow: '0 8px 16px 0 rgb(0 0 0 / 10%), 0 0 6px 0 rgb(0 0 0 / 10%)',
+                  }}
+                  style={{ marginBottom: '3rem' }}
+                >
+                  <Link
+                    href="https://1drv.ms/x/s!AvzncP60GBKEgr9m2YoNfvgTfDypQw?e=khJqRB"
+                    target="_blank"
+                  >
+                    <a rel="noreferrer" title="Abrir documento" className="me-4" target="_blank">
+                      <CardActionArea>
+                        <CardMedia
+                          component="img"
+                          height="140"
+                          image="/img/dolar.jpg"
+                          alt="dolar"
+                        />
+                        <CardContent style={{ backgroundColor: '#E8ECEE' }}>
+                          <Typography gutterBottom variant="h5" component="div">
+                            Presupuesto
+                          </Typography>
+                          <Typography variant="body2" color="text.secondary">
+                            Salario, gastos y presupuestos.
+                          </Typography>
+                        </CardContent>
+                      </CardActionArea>
+                    </a>
+                  </Link>
+                </Card>
+              </CurrencyContainer>
+
               <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}

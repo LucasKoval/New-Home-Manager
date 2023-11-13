@@ -1,21 +1,21 @@
 [
   {
     "id": 1,
+    "name": "Imagenes de Fachada",
+    "description": "Imagenes de la posible fachada.",
+    "link": "https://drive.google.com/file/d/14Y9dyqs_DwY_uRqpJBM_q-axLB0G1oaC/view?usp=sharing"
+  },
+  {
+    "id": 2,
     "name": "Planta y Vista",
     "description": "Plano del proyecto y vista del frente.",
     "link": "https://drive.google.com/file/d/1TGDEcYo1vPM0ylQKJeBVT5N29YSpSNJ8/view?usp=sharing"
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Planta de Proyecto",
     "description": "Plano completo del proyecto.",
     "link": "https://drive.google.com/file/d/1CMuxoryvYyUZlbGMzq8GZKXxvsH9zLpi/view?usp=sharing"
-  },
-  {
-    "id": 3,
-    "name": "Planta de Techos",
-    "description": "Plano de techos y superficie construida.",
-    "link": "https://drive.google.com/file/d/1oGLMdGNF8twgXmK4h4H2SQSLPFEP_zq_/view?usp=sharing"
   },
   {
     "id": 4,
@@ -25,32 +25,57 @@
   },
   {
     "id": 5,
-    "name": "Plano - Fundaciones",
-    "description": "Plano de replanteo y fundaciones.",
-    "link": "https://drive.google.com/file/d/1a70buGc4KrFpAidYsOv7ekyWXKYnbih8/view?usp=sharing"
-  },
-  {
-    "id": 6,
-    "name": "Plano - Encadenado",
-    "description": "Plano de columnas y viga de encadenado.",
-    "link": "https://drive.google.com/file/d/1MnY0M0p7L8BZOSY-G31q97S51kvVoSv5/view?usp=sharing"
-  },
-  {
-    "id": 7,
     "name": "Planos - Instalaciones",
     "description": "Planos de Desague, Pluvial, Agua, Gas y Luz",
     "link": "https://drive.google.com/file/d/1Q4gjjcwOyCPatA0wdeUKAVu6zBysFR3k/view?usp=sharing"
   },
   {
+    "id": 6,
+    "name": "Planta de Techos",
+    "description": "Plano de techos y superficie construida.",
+    "link": "https://drive.google.com/file/d/1oGLMdGNF8twgXmK4h4H2SQSLPFEP_zq_/view?usp=sharing"
+  },
+
+  {
+    "id": 7,
+    "name": "Plano - Fundaciones",
+    "description": "Plano de replanteo y fundaciones.",
+    "link": "https://drive.google.com/file/d/1a70buGc4KrFpAidYsOv7ekyWXKYnbih8/view?usp=sharing"
+  },
+  {
     "id": 8,
+    "name": "Plano - Encadenado",
+    "description": "Plano de columnas y viga de encadenado.",
+    "link": "https://drive.google.com/file/d/1MnY0M0p7L8BZOSY-G31q97S51kvVoSv5/view?usp=sharing"
+  },
+  {
+    "id": 9,
+    "name": "Planilla de Aberturas (Inicial)",
+    "description": "Planilla original de aberturas de aluminio.",
+    "link": "https://drive.google.com/file/d/1pDOB4jjKHdO00emg1Bn50thKzhqI51ng/view?usp=sharing"
+  },
+  {
+    "id": 10,
+    "name": "Planilla de Aberturas (Final)",
+    "description": "Planilla de aberturas de aluminio modificada.",
+    "link": "https://drive.google.com/file/d/1KwakoyqiK5-7EEknuHSkPSb_lvD0-f4G/view?usp=sharing"
+  },
+  {
+    "id": 11,
     "name": "Listado - Materiales",
     "description": "Listado de materiales por etapas.",
     "link": "https://drive.google.com/file/d/1W02tq21Wlxbj32fA639DhkvtQSCMhn_3/view?usp=sharing"
   },
   {
-    "id": 9,
+    "id": 12,
     "name": "Listado - Tareas",
     "description": "Listado de tareas por etapas.",
     "link": "https://drive.google.com/file/d/1kyYRkRPkhyDY0pe9LG6nwBeXiAhhsodc/view?usp=sharing"
+  },
+  {
+    "id": 13,
+    "name": "Honorarios Arquitecta",
+    "description": "Listado de tareas por etapas.",
+    "link": "https://drive.google.com/file/d/15hAQMWINIWGwdarw6z5xuDonWIsx7eTH/view?usp=sharing"
   }
 ]
