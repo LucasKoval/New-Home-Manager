@@ -48,16 +48,15 @@ const Currency = () => {
       const blueElement = currencyResponseData.find((data) => data.casa === 'blue')
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
-      const oficial = parseInt(oficialElement.compra) + 0.5 // Eliminar "+0.5" en Octubre
+      const oficial = parseInt(oficialElement.compra)
       const ccl_ppi = parseInt((cclElement.compra + cclElement.compra) / 2 + 12)
-      //const ccl_ppi = (parseInt(cclElement.compra) + parseInt(cclElement.venta)) / 2
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
       setOficialData(oficialElement)
       setBlueData(blueElement)
       setCclData(cclElement)
       setMepData(mepElement)
-      setTarjetaData((parseInt(get(oficialElement, 'venta', 0)) + 0.5) * 2)
+      setTarjetaData(parseInt(get(oficialElement, 'venta', 0)) * 2)
       setPpiData(ccl_ppi)
       setLossPercentage(lossPercentage)
 
@@ -93,14 +92,13 @@ const Currency = () => {
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               COMPRA:&nbsp;
-              <span className="average">{parseInt(get(oficialData, 'compra', 0)) + 0.5}</span>
-              {/* Eliminar "+0.5" en Octubre */}
+              <span className="average">{parseInt(get(oficialData, 'compra', 0))}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0)) + 0.5}</span>
+              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0))}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
