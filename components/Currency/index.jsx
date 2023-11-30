@@ -27,13 +27,15 @@ const Currency = () => {
   const [lossPercentage, setLossPercentage] = useState(0)
   const plusForRent = 35000
   const plusForBonus = 0
-  const plusExtraYani = 40000
-  const currentSalary = 417012
-  const yaniSalary = 374000 + plusExtraYani
+  const plusForSAC = 208500
+  const plusExtraYani = 187000
+  const currentSalary = 417012 + plusForSAC
+  const yaniSalary = 414000 + plusExtraYani
   const badSalary = 1000000
   const mediumSalary = 1100000
   const badPercentage = 40
   const mediumPercentage = 20
+  const lastBNAValueMonthly = 353.5
   const valtechLastBNAValue = 347.5
   const valtechLastBNAMonth = '23/10/23'
   const updateSalaryMonth = 'Enero'
@@ -48,20 +50,22 @@ const Currency = () => {
       const blueElement = currencyResponseData.find((data) => data.casa === 'blue')
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
-      const oficial = parseInt(oficialElement.compra) + 0.5 /* Delete 0.5 */
-      const ccl_ppi = parseInt((cclElement.compra + cclElement.compra) / 2 + 12)
+      const oficial = parseInt(oficialElement.compra) /* Delete 0.5 */
+      const ccl_ppi = parseInt((cclElement.compra + cclElement.venta) / 2 /* + 10 */)
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
       setOficialData(oficialElement)
       setBlueData(blueElement)
       setCclData(cclElement)
       setMepData(mepElement)
-      setTarjetaData((parseInt(get(oficialElement, 'venta', 0)) + 0.5) * 2) /* Delete 0.5 */
+      setTarjetaData(parseInt(get(oficialElement, 'venta', 0)) * 2.55) /* Delete 0.5 */
       setPpiData(ccl_ppi)
       setLossPercentage(lossPercentage)
 
-      setSalaryDolar((currentSalary + plusForBonus) / oficial)
-      setSalaryPeso(parseInt((currentSalary + plusForBonus) / oficial) * ccl_ppi + plusForRent)
+      setSalaryDolar((currentSalary + plusForBonus) / lastBNAValueMonthly)
+      setSalaryPeso(
+        parseInt((currentSalary + plusForBonus) / lastBNAValueMonthly) * ccl_ppi + plusForRent
+      )
 
       if (parseInt((currentSalary + plusForBonus) / oficial) * ccl_ppi <= badSalary) {
         setSalaryStatus('red')
@@ -92,15 +96,13 @@ const Currency = () => {
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               COMPRA:&nbsp;
-              <span className="average">{parseInt(get(oficialData, 'compra', 0)) + 0.5}</span>{' '}
-              {/* Delete 0.5 */}
+              <span className="average">{parseInt(get(oficialData, 'compra', 0))}</span>{' '}
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
-              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0)) + 0.5}</span>
-              {/* Delete 0.5 */}
+              VENTA:&nbsp;<span>{parseInt(get(oficialData, 'venta', 0))}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
