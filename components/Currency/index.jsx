@@ -35,7 +35,7 @@ const Currency = () => {
   const mediumSalary = 1100000
   const badPercentage = 40
   const mediumPercentage = 20
-  const lastBNAValueMonthly = 353.5
+  const lastBNAValueMonthly = 351.5
   const valtechLastBNAValue = 347.5
   const valtechLastBNAMonth = '23/10/23'
   const updateSalaryMonth = 'Enero'
@@ -59,7 +59,7 @@ const Currency = () => {
       setCclData(cclElement)
       setMepData(mepElement)
       setTarjetaData(parseInt(get(oficialElement, 'venta', 0)) * 2.55) /* Delete 0.5 */
-      setPpiData(ccl_ppi)
+      setPpiData(ccl_ppi + 10) /* Delete +10 */
       setLossPercentage(lossPercentage)
 
       setSalaryDolar((currentSalary + plusForBonus) / lastBNAValueMonthly)
@@ -109,7 +109,7 @@ const Currency = () => {
                 <Image src="/icon/dollar.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               TARJETA:&nbsp;
-              <span>{tarjetaData}</span>
+              <span>{parseInt(tarjetaData)}</span>
             </Item>
           </Stack>
         </div>
