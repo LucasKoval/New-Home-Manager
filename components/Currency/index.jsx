@@ -25,17 +25,17 @@ const Currency = () => {
   const [salaryStatus, setSalaryStatus] = useState(false)
   const [lossStatus, setLossStatus] = useState(false)
   const [lossPercentage, setLossPercentage] = useState(0)
-  const plusForRent = 35000
+  const plusForRent = 75000
   const plusForBonus = 0
-  const plusForSAC = 208500
-  const plusExtraYani = 187000
-  const currentSalary = 417012 + plusForSAC
-  const yaniSalary = 414000 + plusExtraYani
+  const plusForSAC = 0
+  const plusExtraYani = 0
+  const currentSalary = 959000 + plusForSAC
+  const yaniSalary = 445000 + plusExtraYani
   const badSalary = 1000000
-  const mediumSalary = 1100000
+  const mediumSalary = 1200000
   const badPercentage = 40
   const mediumPercentage = 20
-  const lastBNAValueMonthly = 351.5
+  const lastBNAValueMonthly = 780.6
   const valtechLastBNAValue = 347.5
   const valtechLastBNAMonth = '23/10/23'
   const updateSalaryMonth = 'Enero'
@@ -50,22 +50,20 @@ const Currency = () => {
       const blueElement = currencyResponseData.find((data) => data.casa === 'blue')
       const cclElement = currencyResponseData.find((data) => data.casa === 'contadoconliqui')
       const mepElement = currencyResponseData.find((data) => data.casa === 'bolsa')
-      const oficial = parseInt(oficialElement.compra) /* Delete 0.5 */
-      const ccl_ppi = parseInt((cclElement.compra + cclElement.venta) / 2 /* + 10 */)
+      const oficial = parseInt(oficialElement.compra)
+      const ccl_ppi = parseInt(cclElement.compra - 10)
       const lossPercentage = (oficial * 100) / valtechLastBNAValue - 100
 
       setOficialData(oficialElement)
       setBlueData(blueElement)
       setCclData(cclElement)
       setMepData(mepElement)
-      setTarjetaData(parseInt(get(oficialElement, 'venta', 0)) * 2.55) /* Delete 0.5 */
-      setPpiData(ccl_ppi + 10) /* Delete +10 */
+      setTarjetaData(parseInt(get(oficialElement, 'venta', 0)) * 1.6)
+      setPpiData(ccl_ppi)
       setLossPercentage(lossPercentage)
 
-      setSalaryDolar((currentSalary + plusForBonus) / lastBNAValueMonthly)
-      setSalaryPeso(
-        parseInt((currentSalary + plusForBonus) / lastBNAValueMonthly) * ccl_ppi + plusForRent
-      )
+      setSalaryDolar((currentSalary + plusForBonus) / oficial)
+      setSalaryPeso(parseInt((currentSalary + plusForBonus) / oficial) * ccl_ppi + plusForRent)
 
       if (parseInt((currentSalary + plusForBonus) / oficial) * ccl_ppi <= badSalary) {
         setSalaryStatus('red')
@@ -149,16 +147,14 @@ const Currency = () => {
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               CCL PROM:&nbsp;
-              <span>{parseInt((get(cclData, 'compra', 0) + get(cclData, 'venta', 0)) / 2)}</span>
+              <span>{parseInt(get(cclData, 'compra', 0))}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
                 <Image src="/icon/ccl.png" alt="SearchIcon" width="45" height="45" />
               </ImageContainer>
               CCL PPI:&nbsp;
-              <span>
-                {parseInt((get(cclData, 'compra', 0) + get(cclData, 'venta', 0)) / 2 - 12)}
-              </span>
+              <span>{parseInt(get(cclData, 'compra', 0) - 10)}</span>
             </Item>
             <Item>
               <ImageContainer className="currencyIcon isMobile">
@@ -233,7 +229,9 @@ const Currency = () => {
         <span className="bna">{updateSalaryMonth}</span> (22/01/24)
         <br />
         Diferencia BNA actual con UVT:&nbsp;
-        <span className={`bna ${lossStatus}`}>{lossPercentage.toLocaleString('es')}%</span>
+        <span className={`bna ${lossStatus}`}>
+          {parseInt(lossPercentage.toLocaleString('es'))}%
+        </span>
       </Item>
     </>
   )
