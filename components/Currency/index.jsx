@@ -25,12 +25,12 @@ const Currency = () => {
   const [salaryStatus, setSalaryStatus] = useState(false)
   const [lossStatus, setLossStatus] = useState(false)
   const [lossPercentage, setLossPercentage] = useState(0)
-  const plusForRent = 75000
+  const plusForRent = 85000
   const plusForBonus = 0
   const plusForSAC = 0
   const plusExtraYani = 0
   const currentSalary = 959000 + plusForSAC
-  const yaniSalary = 445000 + plusExtraYani
+  const yaniSalary = 490000 + plusExtraYani
   const badSalary = 1000000
   const mediumSalary = 1200000
   const badPercentage = 40
